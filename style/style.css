@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: "Montserrat", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #14213d;
+}
+body{
+    height: 100vh;
+}
+
+nav {
+    padding: 20px 5%;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #14213d;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    animation: infinite;
+}
+
+nav .logo h2 {
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: --myColor1 0.3s, --myColor2 0.3s;
+}
+
+nav ul li a:hover {
+    --myColor1: #b927fc;
+    --myColor2: #2c64fc;
+}
+
+nav ul li a.active {
+    background: linear-gradient(to right,red 100%, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* -- CARD -- */
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 5em 3em;
+}
+
+.card {
+    width: 30vw;
+    padding: 1em 2em;
+    background-color: #001d3d;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: -5px 5px 30px black;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card::after, .card::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(90deg, #a8dadc 30%, #457b9d 50%, #1d3557);*/
+    /*background-image: conic-gradient(#f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0, #f72585);*/
+    background-image: conic-gradient(from var(--angle),
+    transparent 1%, #5e548e, #9f86c0, #3a0ca3, #be95c4, #ffbf69, #fdc500, #5e548e);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 10px;
+    z-index: -1;
+    animation: 10s spin linear infinite;
+}
+
+.card::before{
+    filter: blur(6rem);
+    opacity: 1;
+}
+
+
+@keyframes spin {
+    from {
+       --angle: 0deg;
+    }
+    to {
+       --angle: 360deg;
+    }
+}
+/* -- END CARD -- */
+
+@media screen and (max-width: 850px) {
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 60vw;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        width: 80vw;
+    }
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 3rem;
+}
