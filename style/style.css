@@ -6,6 +6,7 @@
     --yellow: #fee440;
     --light-purple: #9b5de5;
     --pink: #f15bb5;
+    --light-grey: #dad7cd;
 }
 
 .text-center{
@@ -98,7 +99,7 @@ section h3{
     font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    border: 1px solid var(--white);
+    border: 2px solid var(--light-grey);
     border-radius: 10px;
     text-align: center;
     padding: 0.5rem;
