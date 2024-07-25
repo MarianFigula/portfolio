@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/scrolling.css">
 </head>
 <body>
 
+<!-- TODO: navbar nebude ale bude len ten btn pre hamburger menu -->
 <nav>
-    <div class="logo">
-        <h2>LOGO</h2>
-    </div>
     <ul>
         <li>
-            <a href="#" class="">Home</a>
+            <a href="#" class="">About</a>
         </li>
         <li>
-            <a href="#">Services</a>
+            <a href="#">Skills</a>
         </li>
         <li>
-            <a href="#">Blog</a>
+            <a href="#">Projects</a>
         </li>
         <li>
-            <a href="#">Contact Us</a>
+            <a href="#">Contact me</a>
         </li>
     </ul>
-    <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </div>
 </nav>
 
-<section class="welcome-section">
-    <h1 class="welcome-text">Marian Figula</h1>
-    <span id="typed-text" class="typed"></span>
-<!--    <button>Download CV</button>-->
+<header class="welcome-section">
+    <h1 class="welcome-text">Marián Figula</h1>
+    <span id="typed-text" class="typed">typing...</span>
+    <div class="button-container">
+        <button class="cv-button" id="download-cv">Download CV</button>
+    </div>
+</header>
+
+<section class="hidden">
+    <h2>About</h2>
+    <div class="grid-wrapper">
+
+    </div>
+    <p>This is some content about me.</p>
+</section>
+<section class="">
+    <h2>Skills</h2>
+    <p class="text-white">This is some content about my projects.</p>
+</section>
+<section class="hidden">
+    <h2>Projects</h2>
+    <p>This is some content about my projects.</p>
+</section>
+<section class="hidden">
+    <h2>Contact</h2>
+    <p>This is some contact information.</p>
 </section>
 
 
