@@ -301,6 +301,10 @@ section h2{
     font-size: 0.9em;
 }
 
+.card-footer {
+    padding: 0.5em 0;
+}
+
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
