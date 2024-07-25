@@ -8,6 +8,10 @@
     --pink: #f15bb5;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .text-white{
     color: var(--white);
 }
@@ -271,7 +275,7 @@ section h2{
     display: flex;
     justify-content: space-around;
     gap: 2em;
-    padding: 5em 3em;
+    padding: 3em;
 }
 
 .card {
