@@ -289,6 +289,11 @@ section h2{
     box-shadow: -5px 5px 30px black;
 }
 
+.card-header{
+    text-align: left;
+    padding: 0.2em 0 0.3em 0;
+}
+
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
