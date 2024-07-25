@@ -3,6 +3,9 @@
 :root{
     --background-color-dark: #14213d;
     --text-white: #fff;
+    --yellow: #fee440;
+    --light-purple: #9b5de5;
+    --pink: #f15bb5;
 }
 
 * {
@@ -23,6 +26,96 @@ html {
 body{
     height: 100vh;
 }
+
+section.welcome-section{
+    width: 100%;
+    color: var(--text-white);
+    padding: 20vh 5% 2vh 15vw;
+}
+.welcome-text{
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+.typed{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--text-white);
+}
+
+.button-container{
+    margin-top: 10vh;
+}
+
+.cv-button{
+    position: relative;
+    background-image: linear-gradient(to right,
+    var(--light-purple), var(--pink), var(--yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    padding: 0.5rem 0.2rem;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cv-button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+    /*background-color: white;*/
+    /*background-color: var(--background-color-dark);*/
+    transition: border 0.3s ease-in-out;
+}
+
+.cv-button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 1px;
+    translate: 0 2.6rem;
+    background-image: linear-gradient(to right,
+    var(--light-purple), var(--pink), var(--yellow));
+}
+
+.cv-button::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    background-image:  conic-gradient(from var(--angle),
+    transparent 1%, #9b5de5,#f15bb5, #fee440, #9b5de5);
+    z-index: -1;
+    border-radius: 15px;
+    animation: 10s spin linear infinite;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cv-button:hover::before{
+    opacity: 1;
+}
+
+.cv-button::before{
+    filter: blur(4rem);
+}
+
 
 nav {
     padding: 20px 5%;
