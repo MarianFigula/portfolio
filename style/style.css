@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
+:root{
+    --background-color-dark: #14213d;
+    --text-white: #fff;
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -13,7 +18,7 @@ html {
     font-family: "Montserrat", monospace;
     font-size: 16px;
     font-weight: 400;
-    background-color: #14213d;
+    background-color: var(--background-color-dark);
 }
 body{
     height: 100vh;
@@ -21,7 +26,7 @@ body{
 
 nav {
     padding: 20px 5%;
-    display: flex;
+    display: none;
     position: fixed;
     width: 100%;
     justify-content: space-between;
@@ -77,7 +82,7 @@ nav ul li a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: --myColor1 0.3s, --myColor2 0.3s;
+    transition: --myColor1 0.2s, --myColor2 0.5s;
 }
 
 nav ul li a:hover {
@@ -106,7 +111,7 @@ nav ul li a.active {
     width: 30vw;
     padding: 1em 2em;
     background-color: #001d3d;
-    color: #ffffff;
+    color: var(--text-white);
     border-radius: 10px;
     text-align: left;
     position: relative;
@@ -160,17 +165,20 @@ nav ul li a.active {
     .card{
         width: 60vw;
     }
-    .hamburger {
-        display: block;
-    }
     nav ul {
         display: none;
+    }
+    nav ul li a {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 500px) {
     .card{
         width: 80vw;
+    }
+    nav ul li a {
+        font-size: 2rem;
     }
 }
 
@@ -180,6 +188,6 @@ footer {
     bottom: 0;
     text-align: center;
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--text-white);
     padding: 3rem;
 }
