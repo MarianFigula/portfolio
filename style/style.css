@@ -32,6 +32,7 @@ html {
     font-size: 16px;
     font-weight: 400;
     background-color: var(--background-color-dark);
+    scroll-behavior: smooth;
 }
 body{
     height: 100vh;
@@ -247,7 +248,7 @@ header.welcome-section{
     width: 100%;
     height: 120vh;
     color: var(--white);
-    padding: 20vh 5% 2vh 15vw;
+    padding: 25vh 5% 2vh 15vw;
 }
 .welcome-text{
     font-size: 6rem;
@@ -334,73 +335,6 @@ header.welcome-section{
 .cv-button:hover::before{
     opacity: 1;
 }
-
-/* -- header end -- */
-
-/* -- nav -- */
-
-@property --myColor1 {
-    syntax: '<color>';
-    initial-value: #fff;
-    inherits: false;
-}
-
-@property --myColor2 {
-    syntax: '<color>';
-    initial-value: #fff;
-    inherits: false;
-}
-
-nav {
-    padding: 5vh 0;
-    display: none;
-    position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    background-color: yellow;
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    z-index: 1;
-}
-
-/* TODO: pre mobily dat pre display flex a margin left, pridat mozno padding */
-nav ul {
-    list-style: none;
-    display: flex;
-}
-nav ul li {
-    margin-left: 5rem;
-}
-nav ul li a {
-    text-decoration: none;
-    position: relative;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 4px 8px;
-    background: linear-gradient(to right, var(--myColor1), var(--myColor2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: --myColor1 0.7s, --myColor2 1.2s;
-}
-
-nav ul li a:hover {
-    --myColor1: #b927fc;
-    --myColor2: #2c64fc;
-}
-
-nav ul li a.active {
-    background: linear-gradient(to right,red 100%, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
-/* -- nav end -- */
-
 section h2{
     padding: 20vh 5% 2vh 15vw;
 }
