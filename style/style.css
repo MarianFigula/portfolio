@@ -497,10 +497,23 @@ section h2{
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.1rem;
     color: var(--white);
     padding: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footer-copyright{
+    padding: 2rem;
+    font-size: 1.2rem;
 }
