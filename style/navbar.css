@@ -1,0 +1,100 @@
+
+/* -- nav -- */
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #fff;
+    inherits: false;
+}
+
+nav {
+    width: 100%;
+    padding: 10vh 0;
+    position: fixed;
+    margin: 0 auto;
+    background-color: var(--background-color-dark);
+    z-index: 1;
+    translate: 0 -101%;
+    transition: translate 0.5s ease-in-out;
+    border-bottom: 1px solid var(--white);
+}
+
+nav.show {
+    translate: 0 0;
+}
+
+/* TODO: pre mobily dat pre display flex a margin left, pridat mozno padding */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    background: linear-gradient(to right, var(--myColor1) 40%, var(--myColor2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: --myColor1 0.3s, --myColor2 0.7s;
+}
+
+nav ul li a:hover {
+    --myColor1: #b927fc;
+    --myColor2: #2c64fc;
+}
+
+nav ul li a.active {
+    background: linear-gradient(to right,red 100%, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* -- nav end -- */
+
+
+/* navbar icons */
+
+.icon-container {
+    cursor: pointer;
+}
+
+
+#list-icon, #x-icon {
+    transition: all 0.3s ease;
+    position: fixed;
+    z-index: 2;
+    right: 5vw;
+    top: 5vh;
+    opacity: 1;
+}
+
+#list-icon.hide {
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+
+#x-icon.show {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+#x-icon {
+    transform: rotate(-45deg);
+    opacity: 0;
+}
