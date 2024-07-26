@@ -65,8 +65,34 @@ section h3{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* -- about -- */
 
-/* -- skills */
+.grid-about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15vw;
+    grid-row-gap: 3vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-about-item {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.grid-about-item p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: var(--white);
+}
+
+/* -- end about -- */
+
+/* -- skills --*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
