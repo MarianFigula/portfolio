@@ -72,7 +72,7 @@ section h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 15vw;
+    /*grid-column-gap: 15vw;*/
     grid-row-gap: 3vh;
     align-items: center;
     justify-content: center;
@@ -388,7 +388,7 @@ section h2{
     height: 36px;
 }
 
-.card-button img:hover {
+.card-button img:hover, .social-icons img:hover {
     animation: shake-rotate 0.5s;
 }
 
