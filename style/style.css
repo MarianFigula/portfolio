@@ -91,6 +91,14 @@ section h3{
     color: var(--white);
 }
 
+.me-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
 /* -- end about -- */
 
 /* -- skills --*/
