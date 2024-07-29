@@ -60,11 +60,6 @@ section h3{
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
     color: var(--white);
-    background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 /* -- about -- */
 
@@ -192,11 +187,6 @@ section h3{
 
 .submit-button{
     position: relative;
-    background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     border: none;
     padding: 0.2rem;
     border-radius: 15px;
@@ -281,11 +271,6 @@ header.welcome-section{
 
 .cv-button{
     position: relative;
-    background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     border: none;
     padding: 0.5rem 0.2rem;
     border-radius: 15px;
@@ -491,6 +476,15 @@ section h2{
         width: 80vw;
     }
 }
+
+.linear-gradient-text{
+    background-image: linear-gradient(to right,
+    var(--light-purple), var(--pink), var(--yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .textarea {
     height: 20vh;
