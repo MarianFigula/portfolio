@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/scrolling.css">
+    <link rel="stylesheet" href="style/navbar.css">
 </head>
 <body>
 
@@ -12,21 +13,27 @@
 <nav>
     <ul>
         <li>
-            <a href="#" class="">About</a>
+            <a href="#about" class="">About</a>
         </li>
         <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
         </li>
         <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
         </li>
         <li>
-            <a href="#">Contact me</a>
+            <a href="#contact">Contact me</a>
         </li>
     </ul>
 </nav>
 
-<header class="welcome-section hidden">
+<div class="icon-container">
+    <img src="assets/list.svg" alt="list-icon" width="45" id="list-icon">
+    <img src="assets/x-lg.svg" alt="x-icon" width="40" id="x-icon">
+</div>
+
+
+<header class="welcome-section">
     <h1 class="welcome-text">Marián Figula</h1>
     <span id="typed-text" class="typed">typing...</span>
     <div class="button-container">
@@ -34,11 +41,11 @@
     </div>
 </header>
 
-<section class="">
+<section class="" id="about">
     <h2>About</h2>
     <div class="grid-about-container">
         <div class="grid-about-item">
-            <img src="" alt="me">
+<!--            <img src="" alt="me">-->
         </div>
         <div class="grid-about-item text-white">
             <p>Hello everyone !</p>
@@ -55,7 +62,7 @@
         </div>
     </div>
 </section>
-<section class="">
+<section class="" id="skills">
     <h2>Skills</h2>
     <div class="grid-container">
         <div class="grid-item">
@@ -101,7 +108,7 @@
         </div>
     </div>
 </section>
-<section class="hidden">
+<section class="" id="projects">
     <h2>Projects</h2>
     <h3 class="text-center">School projects</h3>
     <div class="card-container">
@@ -196,7 +203,7 @@
         </div>
     </div>
 </section>
-<section class="hidden">
+<section class="" id="contact">
     <h2>Contact</h2>
     <div class="form-container text-center">
         <h3 >Feel free to write me</h3>
@@ -228,7 +235,7 @@
 </section>
 
 
-<footer class="text-center hidden">
+<footer class="text-center">
     <div class="social-icons">
         <a href="https://github.com/MarianFigula"><img src="assets/github.svg" alt="Github" width="36"></a>
         <a href="https://www.linkedin.com/in/mari%C3%A1n-figula-167b871b1/"><img src="assets/linkedin.svg" alt="Linkedin" width="36"></a>
