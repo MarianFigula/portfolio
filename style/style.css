@@ -436,6 +436,18 @@ section h2{
     75% { transform: translateX(-2px) rotate(-2deg); }
     100% { transform: translateX(0) rotate(0); }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,
+    var(--light-purple), var(--pink), var(--yellow));
+    border-radius: 10px;
+}
+
+
+
 /* -- END CARD -- */
 
 @media screen and (max-width: 850px) {
