@@ -173,10 +173,10 @@ section h3{
     border: 1px solid var(--blue);
 }
 
-.input:is(:focus, :valid) ~ .label, input[type="email"]:is(:focus, :invalid) ~ .label {
-    transform:
-            translateY(-120%)
-            scale(0.7);
+/* Updated CSS */
+.input:not(:placeholder-shown) ~ .label,
+.input:is(:focus, :valid) ~ .label {
+    transform: translateY(-120%) scale(0.7);
     background-color: var(--background-color-dark);
     padding-inline: 0.3rem;
     color: var(--white);
@@ -454,6 +454,11 @@ section h2{
         width: 80vw;
     }
 }
+
+.textarea {
+    height: 20vh;
+}
+
 
 footer {
     width: 100%;
