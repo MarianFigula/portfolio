@@ -7,7 +7,8 @@
     --light-purple: #9b5de5;
     --pink: #f15bb5;
     --light-grey: #dad7cd;
-    --blue: #118ab2
+    --blue: #118ab2;
+    --black: #343a40;
 }
 
 .bold {
@@ -354,6 +355,30 @@ section h2{
     font-size: 0.9em;
 }
 
+.card-content p {
+    padding: 0.5em 0;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0.75rem auto;
+    box-shadow: 0 5px 20px black;
+}
+
+.card-description {
+    padding: 0.5em 0;
+}
+
 .card-footer {
     padding: 0.5em 0;
 }
@@ -440,7 +465,7 @@ section h2{
 
 /* -- END CARD -- */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     .card-container{
         flex-direction: column;
         align-items: center;
@@ -449,6 +474,10 @@ section h2{
     .card{
         width: 60vw;
     }
+
+}
+
+@media screen and (max-width: 850px) {
     .social-icons {
         flex-wrap: wrap;
     }
