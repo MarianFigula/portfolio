@@ -328,8 +328,9 @@ section h2{
 .card-container{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 2em;
-    padding: 3em;
+    padding: 3em 0;
 }
 
 .card {
@@ -478,6 +479,11 @@ section h2{
 }
 
 @media screen and (max-width: 850px) {
+    .grid-about-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+    }
     .social-icons {
         flex-wrap: wrap;
     }
@@ -506,14 +512,14 @@ section h2{
 
 @media screen and (max-width: 500px) {
     .welcome-text{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     section h2 {
-        font-size: 1.5rem;
+        font-size: 2.75rem;
     }
 
     section h3 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .grid-container, .grid-about-container{
