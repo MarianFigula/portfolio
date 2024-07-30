@@ -1,10 +1,10 @@
+const cvButton = document.getElementById("download-cv");
 
 const typed = new Typed('#typed-text', {
-    strings: ['Web Developer', '.'],
-    typeSpeed: 100,
+    strings: ['Web Developer','Frontend Developer', 'Student',"Eager for knowledge", "Tech Enthusiast", "Fast learner"],
+    typeSpeed: 70,
 });
 
-const cvButton = document.getElementById("download-cv");
 cvButton.addEventListener('click', () => {
     console.log("clicked");
     const link = document.createElement('a');
@@ -13,23 +13,12 @@ cvButton.addEventListener('click', () => {
     link.dispatchEvent(new MouseEvent('click'));
 })
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const sections = document.querySelectorAll("section");
-//
-//     const options = {
-//         threshold: 0.25
-//     };
-//
-//     const observer = new IntersectionObserver((entries, observer) => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add("show");
-//                 observer.unobserve(entry.target); // Stop observing once it’s in view
-//             }
-//         });
-//     }, options);
-//
-//     sections.forEach(section => {
-//         observer.observe(section);
-//     });
-// });
+document.querySelector('.icon-container').addEventListener('click', () => {
+    const listIcon = document.getElementById('list-icon');
+    const xIcon = document.getElementById('x-icon');
+    const nav = document.querySelector('nav');
+
+    listIcon.classList.toggle('hide');
+    xIcon.classList.toggle('show');
+    nav.classList.toggle('show');
+});
