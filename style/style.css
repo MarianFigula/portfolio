@@ -25,6 +25,10 @@
     color: var(--white);
 }
 
+.mt-4{
+    margin-top: 4rem;
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -45,6 +49,19 @@ body{
     height: 100vh;
 }
 
+.linear-gradient-text{
+    background-image: linear-gradient(to right,
+    var(--light-purple), var(--pink), var(--yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.textarea {
+    height: 20vh;
+}
+
 section h2{
     font-size: 4rem;
     font-weight: 700;
@@ -62,7 +79,7 @@ section h2{
 }
 
 section h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
@@ -376,6 +393,33 @@ section h2{
 
 /* -- END CARD -- */
 
+/* -- footer -- */
+
+footer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--white);
+    padding: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footer-copyright{
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 1200px) {
     .card-container{
         flex-direction: column;
@@ -432,10 +476,6 @@ section h2{
         font-size: 2.75rem;
     }
 
-    section h3 {
-        font-size: 2rem;
-    }
-
     .grid-container, .grid-about-container{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -456,41 +496,4 @@ section h2{
         animation: none;
         filter: none;
     }
-}
-
-.linear-gradient-text{
-    background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.textarea {
-    height: 20vh;
-}
-
-
-footer {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    color: var(--white);
-    padding: 3rem;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.footer-copyright{
-    padding: 2rem;
-    font-size: 1.2rem;
 }
