@@ -251,7 +251,7 @@ section h3{
 /* -- header -- */
 header.welcome-section{
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     color: var(--white);
     padding: 25vh 5% 2vh 15vw;
 }
@@ -397,9 +397,9 @@ section h2{
     .social-icons {
         flex-wrap: wrap;
     }
-    section h2, .welcome-section{
+    section h2, header.welcome-section{
         text-align: center;
-        padding: 0;
+        padding: 25vh 0 2vh;
     }
     nav {
         padding: 3vh 0;
