@@ -325,6 +325,28 @@ section h2{
     padding: 20vh 5% 2vh 15vw;
 }
 
+.scroll-down-icon {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    translate: -50% 0;
+    width: 40px;
+    height: 40px;
+    animation: scroll-down 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 .auto-show {
