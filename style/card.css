@@ -24,6 +24,10 @@
     padding: 0.2em 0 0.5em 0;
 }
 
+.card-title{
+    font-size: 1.25rem;
+}
+
 .card-content {
     text-align: left;
     padding: 0 0 0.75em 0;
