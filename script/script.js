@@ -24,7 +24,11 @@ document.querySelector('.icon-container').addEventListener('click', () => {
 });
 
 document.querySelector('.scroll-down-icon').addEventListener('click', () => {
-    const about = document.querySelector('#about');
-    about.scrollIntoView({behavior: 'smooth'});
-
+    //const about = document.querySelector('#about');
+    //about.scrollIntoView({behavior: 'smooth'});
+    window.scrollTo({
+        top: document.querySelector('#about').offsetHeight,
+        left: 0,
+        behavior: 'smooth'
+    });
 })
