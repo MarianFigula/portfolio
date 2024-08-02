@@ -380,12 +380,6 @@ section h2{
         text-align: center;
         padding: 0;
     }
-    .cv-button{
-        font-size: 1rem;
-    }
-    .cv-button::after{
-        translate: 0 2rem;
-    }
     nav {
         padding: 3vh 0;
     }
@@ -397,6 +391,13 @@ section h2{
     nav ul li a {
         font-size: 1rem;
     }
+    .card::after, .card::before {
+        background-image: none;
+        position: absolute;
+        animation: none;
+        filter: none;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -418,6 +419,12 @@ section h2{
     }
     .card{
         width: 80vw;
+    }
+    .cv-button{
+        font-size: 1rem;
+    }
+    .cv-button::after{
+        translate: 0 1.75rem;
     }
 }
 
