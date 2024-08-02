@@ -53,18 +53,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    --myColor1: #b927fc;
-    --myColor2: #2c64fc;
+    --myColor1: var(--deep-purple);
+    --myColor2: var(--deep-blue);
 }
-
-nav ul li a.active {
-    background: linear-gradient(to right,red 100%, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-
 /* -- nav end -- */
 
 
