@@ -341,7 +341,6 @@ section h2{
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-
 }
 
 @keyframes shake-rotate {
@@ -425,6 +424,12 @@ section h2{
     }
     .cv-button::after{
         translate: 0 1.75rem;
+    }
+    .card::after, .card::before {
+        background-image: none;
+        position: absolute;
+        animation: none;
+        filter: none;
     }
 }
 
