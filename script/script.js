@@ -1,5 +1,6 @@
 const cvButton = document.getElementById("download-cv");
 
+// Initialize the Typed.js instance
 const typed = new Typed('#typed-text', {
     strings: ['Web Developer','Frontend Developer', 'Student',"Eager for knowledge", "Tech Enthusiast", "Fast learner"],
     typeSpeed: 70,
@@ -24,11 +25,6 @@ document.querySelector('.icon-container').addEventListener('click', () => {
 });
 
 document.querySelector('.scroll-down-icon').addEventListener('click', () => {
-    //const about = document.querySelector('#about');
-    //about.scrollIntoView({behavior: 'smooth'});
-    window.scrollTo({
-        top: document.querySelector('#about').offsetHeight,
-        left: 0,
-        behavior: 'smooth'
-    });
+    const about = document.querySelector('#about');
+    about.scrollIntoView({behavior: 'smooth'});
 })
