@@ -66,13 +66,20 @@ nav ul li a:hover {
 }
 
 
-#list-icon, #x-icon {
+#list-icon, #x-icon{
     transition: all 0.3s ease;
     position: fixed;
     z-index: 2;
-    right: 5vw;
+    right: 6vw;
     top: 5vh;
     opacity: 1;
+}
+
+#sk-flag, #gb-flag {
+    position: absolute;
+    right: 3vw;
+    top: 5.7vh;
+    border-radius: 5px;
 }
 
 #list-icon.hide {
