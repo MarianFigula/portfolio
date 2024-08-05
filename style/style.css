@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
 :root{
-    --background-color-dark: #14213d;
+    --background-color-dark: #00193b;/* /*#001a2c */ /* 023047 */
     --white: #fff;
     --yellow: #fee440;
     --light-purple: #9b5de5;
@@ -39,7 +39,7 @@
 
 
 html {
-    font-family: "Montserrat", monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     background-color: var(--background-color-dark);
@@ -428,6 +428,11 @@ footer {
     }
     .card{
         width: 60vw;
+    }
+    #sk-flag, #gb-flag {
+        position: absolute;
+        left: 4vw;
+        top: 6vh;
     }
 
 }
