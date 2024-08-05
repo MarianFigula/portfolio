@@ -1,8 +1,24 @@
 const cvButton = document.getElementById("download-cv");
 
+
+const typedStringsEN = [
+    "Web Developer",
+    "Frontend Developer",
+    "Student",
+    "Eager for knowledge",
+    "Tech Enthusiast",
+    "Fast learner"
+]
+const typedStringsSK = [
+    "Web Developer",
+    "Frontend Developer",
+    "Študent",
+    "Technický nadšenec",
+]
+
 // Initialize the Typed.js instance
 const typed = new Typed('#typed-text', {
-    strings: ['Web Developer','Frontend Developer', 'Student',"Eager for knowledge", "Tech Enthusiast", "Fast learner"],
+    strings: location.href.includes("sk") ? typedStringsSK : typedStringsEN,
     typeSpeed: 70,
 });
 
