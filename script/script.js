@@ -16,11 +16,23 @@ const typedStringsSK = [
     "Technický nadšenec",
 ]
 
-// Initialize the Typed.js instance
-const typed = new Typed('#typed-text', {
-    strings: location.href.includes("sk") ? typedStringsSK : typedStringsEN,
-    typeSpeed: 70,
+// preloader
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide preloader and show main content after the window is fully loaded
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader');
+        const loaderBar = document.querySelector('.loader-bar');
+        preloader.classList.add('preloader-hidden');
+
+        // Initialize the Typed.js instance
+        const typed = new Typed('#typed-text', {
+            strings: location.href.includes("sk") ? typedStringsSK : typedStringsEN,
+            typeSpeed: 70,
+        });
+
+    });
 });
+
 
 // button for downloading cv
 cvButton.addEventListener('click', () => {
