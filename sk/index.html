@@ -9,8 +9,13 @@
   <link rel="stylesheet" href="../style/navbar.css">
   <link rel="stylesheet" href="../style/card.css">
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/preloader.css">
 </head>
 <body>
+
+<div class="preloader">
+  <div class="loader-bar"></div>
+</div>
 
 <nav>
   <ul>
@@ -316,10 +321,10 @@
   <h2 class="auto-show">Kontakt</h2>
   <div class="form-container text-center">
     <h3 class="auto-show linear-gradient-text">Napíš mi</h3>
-    <form action="" method="post" class="auto-show">
+    <form class="auto-show" id="form">
       <div class="input-group">
         <input type="text" class="input" id="name" placeholder=" " required>
-        <label for="name" class="label">Name</label>
+        <label for="name" class="label">Meno</label>
       </div>
       <div class="input-group">
         <input type="email" class="input" id="email" placeholder=" " required>
