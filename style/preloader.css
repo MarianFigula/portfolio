@@ -1,0 +1,66 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    background: var(--background-color-dark); /* Change to your preferred background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it covers everything */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.loader-bar {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 33.3%;
+    width: 33.3%;
+    height: 1px;
+    z-index: 99999;
+}
+
+
+.loader-bar::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,
+    var(--light-purple), var(--pink), var(--yellow));
+    animation: loaderbar 2s infinite alternate;
+}
+
+
+@keyframes loaderbar {
+    0% {
+        transform: translateX(0) scaleX(0);
+    }
+    /*45% {*/
+    /*    transform: translateX(0) scaleX(1);*/
+    /*    transform-origin: left;*/
+    /*    left: 33.3%;*/
+    /*    right: auto;*/
+    /*}*/
+    /*50% {*/
+    /*    transform: translateX(0) scaleX(1);*/
+    /*    transform-origin: right;*/
+    /*    left: auto;*/
+    /*    right: 33.3%;*/
+    /*}*/
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+/* When preloader is hidden */
+.preloader.preloader-hidden {
+    transform: translateY(-100%);
+    opacity: 0.8;
+}
