@@ -34,8 +34,8 @@
   <img src="../assets/x-lg.svg" alt="x-icon" width="40" id="x-icon">
 </div>
 
-<div class="flag">
-  <a href="../index.html"><img src="../assets/gb.svg" alt="gb-flag" width="40" id="gb-flag"></a>
+<div class="language">
+  <a class="linear-gradient-text gradient-line-effect" href="../index.html">EN</a>
 </div>
 
 <header class="welcome-section">
@@ -318,8 +318,8 @@
     <h3 class="auto-show linear-gradient-text">Napíš mi</h3>
     <form action="" method="post" class="auto-show">
       <div class="input-group">
-        <input type="text" class="input" id="username" placeholder=" " required>
-        <label for="username" class="label">Meno</label>
+        <input type="text" class="input" id="name" placeholder=" " required>
+        <label for="name" class="label">Name</label>
       </div>
       <div class="input-group">
         <input type="email" class="input" id="email" placeholder=" " required>
@@ -340,9 +340,7 @@
     <div class="calendly-inline-widget auto-show"
          data-url="https://calendly.com/majofigulam3/45min?background_color=14213d&text_color=ffffff&primary_color=9b5de5"
          style="min-width:320px;height:700px; overflow: hidden"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
-  </div>
+    </div>
 </section>
 
 
@@ -360,6 +358,15 @@
 </footer>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script src="../script/script.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init({
+      publicKey: "UWfx0PhazET9YyLHf",
+    });
+  })();
+</script>
 </body>
 </html>
