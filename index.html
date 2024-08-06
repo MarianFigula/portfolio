@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marián Figula</title>
     <link rel="stylesheet" href="style/scrolling.css">
@@ -34,8 +34,8 @@
     <img src="assets/x-lg.svg" alt="x-icon" width="40" id="x-icon">
 </div>
 
-<div class="flag">
-    <a href="sk/index.html"><img src="assets/sk.svg" alt="sk-flag" width="40" id="sk-flag"></a>
+<div class="language">
+    <a class="linear-gradient-text gradient-line-effect" href="sk/index.html">SK</a>
 </div>
 
 
@@ -59,18 +59,22 @@
             <br>
             <p>
                 My name is Marián Figula, and I'm a Web Developer.
-                I've been studying at the Faculty of Electrical Engineering and Information Technology of STU in Bratislava
+                I've been studying at the Faculty of Electrical Engineering and Information Technology of STU in
+                Bratislava
                 where I graduated in Applied informatics.
             </p>
             <br>
             <p>
                 I am currently working at <a href="https://yourlox.com" class="linear-gradient-text bold">YourLox</a>
                 as a Fronted Developer, taking care of ...
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa cupiditate debitis delectus digniss
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa cupiditate debitis delectus
+                digniss
             </p>
             <br>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium aperiam culpa doloribus ducimus eaque excepturi, facere hic ipsum itaque iusto maiores nobis perspiciatis quidem saepe sapiente veniam voluptas.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium aperiam culpa doloribus
+                ducimus eaque excepturi, facere hic ipsum itaque iusto maiores nobis perspiciatis quidem saepe sapiente
+                veniam voluptas.
             </p>
 
         </div>
@@ -320,10 +324,10 @@
     <h2 class="auto-show">Contact</h2>
     <div class="form-container text-center">
         <h3 class="auto-show linear-gradient-text">Feel free to write me</h3>
-        <form action="" method="post" class="auto-show" id="form">
+        <form class="auto-show" id="form">
             <div class="input-group">
-                <input type="text" class="input" id="username" placeholder=" " required>
-                <label for="username" class="label">Name</label>
+                <input type="text" class="input" id="name" placeholder=" " required>
+                <label for="name" class="label">Name</label>
             </div>
             <div class="input-group">
                 <input type="email" class="input" id="email" placeholder=" " required>
@@ -334,7 +338,7 @@
                 <label for="message" class="label">Message</label>
             </div>
             <div class="input-group">
-                <button type="submit" class="submit-button linear-gradient-text">Send</button>
+                <button type="submit" class="submit-button linear-gradient-text gradient-line-effect">Send</button>
             </div>
         </form>
     </div>
@@ -363,8 +367,15 @@
 </footer>
 
 <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script defer src="script/script.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "UWfx0PhazET9YyLHf",
+        });
+    })();
+</script>
 </body>
 </html>
