@@ -241,7 +241,7 @@ section h3{
     height: 1px;
     top: 0;
     left: 1px;
-    translate: 0 2rem;
+    translate: 0 30px;
     background-image: linear-gradient(to right,
     var(--light-purple), var(--pink), var(--yellow));
     transition: width 0.2s ease-in-out;
@@ -429,10 +429,10 @@ footer {
     .card{
         width: 60vw;
     }
-    #sk-flag, #gb-flag {
+    .language {
         position: absolute;
         left: 4vw;
-        top: 6vh;
+        top: 5.5vh;
     }
 
 }
