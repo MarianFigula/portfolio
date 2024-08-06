@@ -187,6 +187,14 @@ section h3{
     text-align: left;
 }
 
+.input:-webkit-autofill{
+    -webkit-text-fill-color: var(--white);
+    -webkit-box-shadow: 0 0 0 30px var(--background-color-dark) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: var(--background-color-dark);
+}
+
+
 .label{
     position: absolute;
     top: 1rem;
@@ -220,21 +228,13 @@ section h3{
     transition: 0.3s;
 }
 
-.submit-button::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 15px;
-    /*background-color: white;*/
-    /*background-color: var(--background-color-dark);*/
-    transition: border 0.3s ease-in-out;
+
+.gradient-line-effect {
+    position: relative;
+    border: none;
 }
 
-.submit-button::after{
+.gradient-line-effect::after{
     content: "";
     position: absolute;
     width: 0;
@@ -247,7 +247,7 @@ section h3{
     transition: width 0.2s ease-in-out;
 }
 
-.submit-button:hover::after{
+.gradient-line-effect:hover::after{
     width: 100%;
 }
 
