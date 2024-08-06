@@ -13,6 +13,10 @@
     --black: #343a40;
 }
 
+.decoration-none{
+    text-decoration: none;
+}
+
 .bold {
     font-weight: 700;
 }
