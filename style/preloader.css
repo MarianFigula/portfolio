@@ -22,18 +22,21 @@
     width: 33.3%;
     height: 1px;
     z-index: 99999;
+    animation: loaderbar 2s infinite alternate;
 }
 
 
 .loader-bar::after{
     content: '';
     position: absolute;
-    width: 100%;
+    width: 33.3%;
     height: 2px;
     top: 0;
     left: 0;
     background-image: linear-gradient(to right,
     var(--light-purple), var(--pink), var(--yellow));
+    transform-origin: left;
+    transform: scaleX(0);
     animation: loaderbar 2s infinite alternate;
 }
 
@@ -41,6 +44,9 @@
 @keyframes loaderbar {
     0% {
         transform: translateX(0) scaleX(0);
+        transform-origin: left;
+        left: 33.3%;
+        right: auto;
     }
     /*45% {*/
     /*    transform: translateX(0) scaleX(1);*/
@@ -48,14 +54,17 @@
     /*    left: 33.3%;*/
     /*    right: auto;*/
     /*}*/
-    /*50% {*/
-    /*    transform: translateX(0) scaleX(1);*/
-    /*    transform-origin: right;*/
-    /*    left: auto;*/
-    /*    right: 33.3%;*/
-    /*}*/
-    100% {
+    50% {
         transform: translateX(0) scaleX(1);
+        transform-origin: right;
+        left: auto;
+        right: 33.3%;
+    }
+    100% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: right;
+        left: auto;
+        right: 33.3%;
     }
 }
 
