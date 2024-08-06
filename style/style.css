@@ -40,7 +40,7 @@
 
 html {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     background-color: var(--background-color-dark);
     scroll-behavior: smooth;
@@ -421,6 +421,11 @@ footer {
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
+    .grid-about-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+    }
     .card-container{
         flex-direction: column;
         align-items: center;
@@ -438,11 +443,6 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
-    .grid-about-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: 0;
-    }
     .grid-item:nth-child(1){
         width: 100%;
     }
@@ -494,10 +494,10 @@ footer {
         width: 80vw;
     }
     .cv-button{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .cv-button::after{
-        translate: 0 1.75rem;
+        translate: 0 2.25rem;
     }
     .card::after, .card::before {
         background-image: none;
