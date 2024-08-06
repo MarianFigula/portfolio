@@ -367,9 +367,9 @@ section h2{
 
 
 .auto-show {
-    animation: autoShowAnimation 0.5s linear;
+    animation: autoShowAnimation 0.5s both;
     animation-timeline: view();
-    animation-range: cover 0% contain 50%;
+    animation-range: cover 0% contain 65%;
 
 }
 
