@@ -1,17 +1,30 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
+/*:root{*/
+/*    --background-color-dark: #00193b;!* !*#001a2c *! !* 023047 *!*/
+/*    --white: #fff;*/
+/*    --yellow: #fee440;*/
+/*    --light-purple: #9b5de5;*/
+/*    --pink: #f15bb5;*/
+/*    --light-grey: #dad7cd;*/
+/*    --blue: #118ab2;*/
+/*    --deep-blue: #2c64fc;*/
+/*    --deep-purple: #b927fc;*/
+/*    --black: #343a40;*/
+/*}*/
+
 :root{
-    --background-color-dark: #00193b;/* /*#001a2c */ /* 023047 */
+    --background-color-dark: #002029;
     --white: #fff;
-    --yellow: #fee440;
-    --light-purple: #9b5de5;
-    --pink: #f15bb5;
+    --primary-blue: #4285F4;
+    --primary-light-blue: #2AABEE;
+    --card-white: #fdf0d5;
     --light-grey: #dad7cd;
-    --blue: #118ab2;
-    --deep-blue: #2c64fc;
-    --deep-purple: #b927fc;
-    --black: #343a40;
+    --navbar-deep-blue: #4285F4;
+    --navbar-light-blue: #9bb1ff;
+    --input-focus-blue: #118ab2;
 }
+
 
 .decoration-none{
     text-decoration: none;
@@ -55,7 +68,7 @@ body{
 
 .linear-gradient-text{
     background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
+    var(--primary-blue) 58%, var(--primary-light-blue) 77%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -76,7 +89,7 @@ section h2{
 
 .reversed-linear-gradient{
     background-image: linear-gradient(to left,
-    var(--pink), var(--light-purple));
+    var(--primary-light-blue), var(--primary-blue));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -209,7 +222,7 @@ section h3{
 }
 
 .input:focus {
-    border: 1px solid var(--blue);
+    border: 1px solid var(--input-focus-blue);
 }
 
 /* Updated CSS */
@@ -247,7 +260,7 @@ section h3{
     left: 1px;
     translate: 0 30px;
     background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
+    var(--primary-blue), var(--primary-light-blue));
     transition: width 0.2s ease-in-out;
 }
 
@@ -317,7 +330,7 @@ header.welcome-section{
     left: 1px;
     translate: 0 2.6rem;
     background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
+    var(--primary-blue) 58%, var(--primary-light-blue) 77%);
 }
 
 .cv-button::before{
@@ -330,12 +343,13 @@ header.welcome-section{
     translate: -50% -50%;
     opacity: 0;
     background-image:  conic-gradient(from var(--angle),
-    transparent 1%, #9b5de5,#f15bb5, #fee440, #9b5de5);
+    transparent 1%, var(--primary-blue),var(--primary-light-blue), var(--card-white),
+    var(--primary-blue));
     z-index: -1;
     padding: 10px;
     filter: blur(5rem);
     border-radius: 15px;
-    animation: 10s spin linear infinite;
+    animation: 5s spin linear infinite;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -373,7 +387,7 @@ section h2{
 .auto-show {
     animation: autoShowAnimation 1s both;
     animation-timeline: view();
-    animation-range: cover 0% contain 65%;
+    animation-range: cover 0 contain 60%;
 
 }
 
@@ -439,6 +453,7 @@ footer {
     }
     .card{
         width: 60vw;
+        box-shadow: -5px 5px 30px rgba(191,219,247, 0.7);
     }
     .language {
         position: absolute;

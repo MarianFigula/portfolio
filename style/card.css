@@ -11,7 +11,7 @@
 .card {
     width: 30vw;
     padding: 1em 2em;
-    background-color: #001d3d;
+    background-color: var(--background-color-dark);
     color: var(--white);
     border-radius: 10px;
     text-align: left;
@@ -88,7 +88,8 @@
     /*background: linear-gradient(90deg, #a8dadc 30%, #457b9d 50%, #1d3557);*/
     /*background-image: conic-gradient(#f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0, #f72585);*/
     background-image: conic-gradient(from var(--angle),
-    transparent 1%, #5e548e, #9f86c0, #3a0ca3, #be95c4, #ffbf69, #fdc500, #5e548e);
+    transparent 1%,
+    var(--primary-blue), var(--primary-light-blue), var(--card-white), var(--primary-blue));
     position: absolute;
     top: 50%;
     left: 50%;

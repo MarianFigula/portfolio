@@ -34,7 +34,7 @@
     top: 0;
     left: 0;
     background-image: linear-gradient(to right,
-    var(--light-purple), var(--pink), var(--yellow));
+    var(--primary-blue), var(--primary-light-blue));
     transform-origin: left;
     transform: scaleX(0);
     animation: loaderbar 2s infinite alternate;
