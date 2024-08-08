@@ -29,7 +29,6 @@ nav.show {
     translate: 0 0;
 }
 
-/* TODO: pre mobily dat pre display flex a margin left, pridat mozno padding */
 nav ul {
     list-style: none;
     display: flex;
