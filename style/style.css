@@ -16,7 +16,7 @@
 :root{
     --background-color-dark: #002029;
     --white: #fff;
-    --primary-blue: #4285F4;
+    --primary-blue: #00a6e1; /*#00a6e1*/
     --primary-light-blue: #2AABEE;
     --card-white: #fdf0d5;
     --light-grey: #dad7cd;
@@ -43,11 +43,11 @@
 }
 
 .ps-2{
-    padding-left: 2rem;
+    padding-left: 5rem;
 }
 
 .pe-2{
-    padding-right: 2rem;
+    padding-right: 5rem;
 }
 
 .mt-4{
@@ -142,8 +142,8 @@ section h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 3vh;
-    grid-column-gap: 15vw;
+    grid-row-gap: 5vh;
+    grid-column-gap: 8vw;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -466,6 +466,10 @@ footer {
 @media screen and (max-width: 850px) {
     .grid-item:nth-child(1){
         width: 100%;
+    }
+
+    .grid-item{
+        padding: 0;
     }
     .social-icons {
         flex-wrap: wrap;
