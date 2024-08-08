@@ -1,5 +1,6 @@
 const cvButton = document.getElementById("download-cv");
 const form = document.getElementById("form");
+const isSk = window.location.href.includes("sk")
 
 const typedStringsEN = [
     "Web Developer",
@@ -23,10 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const preloader = document.querySelector('.preloader');
         const loaderBar = document.querySelector('.loader-bar');
         preloader.classList.add('preloader-hidden');
-
         // Initialize the Typed.js instance
         const typed = new Typed('#typed-text', {
-            strings: location.href.includes("sk") ? typedStringsSK : typedStringsEN,
+            strings: isSk ? typedStringsSK : typedStringsEN,
             typeSpeed: 70,
         });
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 cvButton.addEventListener('click', () => {
     console.log("clicked");
     const link = document.createElement('a');
-    link.href = 'assets/CV.pdf';
+    link.href = isSk ? 'assets/CV_sk.pdf' : 'assets/CV.pdf';
     link.download = 'CV.pdf';
     link.dispatchEvent(new MouseEvent('click'));
 })
