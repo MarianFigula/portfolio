@@ -499,7 +499,6 @@ footer {
     }
 
     .grid-container, .grid-about-container{
-        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-column-gap: 0;
     }
