@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
 cvButton.addEventListener('click', () => {
     console.log("clicked");
     const link = document.createElement('a');
-    link.href = isSk ? 'assets/CV_sk.pdf' : 'assets/CV.pdf';
-    link.download = 'CV.pdf';
+    link.href = isSk ? '../assets/CV_sk.pdf' : 'assets/CV.pdf';
+    link.download = isSk ? 'CV_sk.pdf' : 'CV.pdf';
     link.dispatchEvent(new MouseEvent('click'));
 })
 
