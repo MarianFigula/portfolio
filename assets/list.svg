@@ -3,9 +3,9 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 7.5C2.5 7.22386 2.72386 7 3 7H13C13.2761 7 13.5 7.22386 13.5 7.5C13.5 7.77614 13.2761 8 13 8H3C2.72386 8 2.5 7.77614 2.5 7.5Z" fill="url(#paint0_angular_3381_880)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 3.5C2.5 3.22386 2.72386 3 3 3H13C13.2761 3 13.5 3.22386 13.5 3.5C13.5 3.77614 13.2761 4 13 4H3C2.72386 4 2.5 3.77614 2.5 3.5Z" fill="url(#paint0_angular_3381_880)"/>
     <defs>
-        <radialGradient id="paint0_angular_3381_880" cx="0" cy="0" r="9" gradientUnits="userSpaceOnUse" gradientTransform="translate(8 8.00008) rotate(90) scale(8.00008 8)">
-            <stop stop-color="#4285F4"/>
-            <stop offset="0.6"/>
+        <radialGradient id="paint0_angular_3381_880" cx="0" cy="0" r="12" gradientUnits="userSpaceOnUse" gradientTransform="translate(11) rotate(180) scale(3.0008 8)">
+            <stop stop-color="#2AABEE"/>
+            <stop offset="1"/>
         </radialGradient>
     </defs>
 </svg>
