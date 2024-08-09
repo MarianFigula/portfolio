@@ -41,7 +41,7 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     position: relative;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 700;
     padding: 4px 8px;
     background: linear-gradient(to right, var(--myColor1) 40%, var(--myColor2));
