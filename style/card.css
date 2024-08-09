@@ -2,9 +2,9 @@
 
 .card-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 2em;
+    row-gap: 2em;
     padding: 3em 0;
 }
 
