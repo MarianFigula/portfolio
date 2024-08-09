@@ -52,8 +52,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    --myColor1: var(--navbar-light-blue);
-    --myColor2: var(--navbar-deep-blue);
+    --myColor1: var(--primary-blue);
+    --myColor2: var(--primary-light-blue);
 }
 /* -- nav end -- */
 
