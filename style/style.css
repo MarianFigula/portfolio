@@ -1,18 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
-/*:root{*/
-/*    --background-color-dark: #00193b;!* !*#001a2c *! !* 023047 *!*/
-/*    --white: #fff;*/
-/*    --yellow: #fee440;*/
-/*    --light-purple: #9b5de5;*/
-/*    --pink: #f15bb5;*/
-/*    --light-grey: #dad7cd;*/
-/*    --blue: #118ab2;*/
-/*    --deep-blue: #2c64fc;*/
-/*    --deep-purple: #b927fc;*/
-/*    --black: #343a40;*/
-/*}*/
-
 :root{
     --background-color-dark: #002029;
     --white: #fff;
@@ -117,14 +104,14 @@ section h3{
 .grid-about-item {
     width: 60%;
     margin: 0 auto;
+    p {
+        font-size: clamp(1rem, 5vw, 1.25rem);
+        font-weight: 400;
+        line-height: 1.75rem;
+        color: var(--white);
+    }
 }
 
-.grid-about-item p {
-    font-size: clamp(1rem, 5vw, 1.25rem);
-    font-weight: 400;
-    line-height: 1.75rem;
-    color: var(--white);
-}
 
 .me-image {
     width: 100%;
@@ -146,12 +133,12 @@ section h3{
     align-items: center;
     justify-content: center;
     align-content: center;
+    h3 {
+        text-align: center;
+    }
 
 }
 
-.grid-skills-container h3{
-    text-align: center;
-}
 .grid-item:nth-child(1) {
     width: 60%;
     margin: 0 auto;
@@ -165,17 +152,17 @@ section h3{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
-.skill-section p {
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-    border: 2px solid var(--light-grey);
-    border-radius: 10px;
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    color: var(--white);
+    p {
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+        border: 2px solid var(--light-grey);
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        color: var(--white);
+    }
 }
 /* -- end skills -- */
 
@@ -303,10 +290,6 @@ header.welcome-section{
 
 .button-container{
     margin-top: 10vh;
-}
-
-.transparent-text-with-linear-gradient{
-
 }
 
 .cv-button{

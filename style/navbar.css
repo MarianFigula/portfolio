@@ -23,32 +23,30 @@ nav {
     translate: 0 -101%;
     transition: translate 0.5s ease-in-out;
     border-bottom: 1px solid var(--white);
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+        li a {
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 700;
+            padding: 4px 8px;
+            background: linear-gradient(to right, var(--myColor1) 40%, var(--myColor2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: --myColor1 0.3s, --myColor2 0.7s;
+        }
+    }
 }
 
 nav.show {
     translate: 0 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10vw;
-}
-
-nav ul li a {
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    font-weight: 700;
-    padding: 4px 8px;
-    background: linear-gradient(to right, var(--myColor1) 40%, var(--myColor2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: --myColor1 0.3s, --myColor2 0.7s;
 }
 
 nav ul li a:hover {
@@ -87,12 +85,12 @@ nav ul li a:hover {
     opacity: 0;
 }
 
-#x-icon.show {
-    transform: rotate(0deg);
-    opacity: 1;
-}
-
 #x-icon {
     transform: rotate(-45deg);
     opacity: 0;
+}
+
+#x-icon.show {
+    transform: rotate(0deg);
+    opacity: 1;
 }
