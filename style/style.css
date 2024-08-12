@@ -432,7 +432,6 @@ footer {
     }
     .card{
         width: 60vw;
-        box-shadow: -5px 5px 30px rgba(191,219,247, 0.7);
     }
     .language {
         position: absolute;
