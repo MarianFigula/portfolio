@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const typed = new Typed('#typed-text', {
             strings: isSk ? typedStringsSK : typedStringsEN,
             typeSpeed: 70,
+            loop: true,
         });
 
     });
