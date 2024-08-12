@@ -72,7 +72,24 @@
     height: 36px;
 }
 
-.card-button img:hover, .social-icons img:hover {
+.tooltip {
+    position: absolute;
+    font-size: 1.25rem;
+    left: 0;
+    top: 2.5vh;
+    opacity: 0;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+/* Trigger tooltip animation when hovering over the .card-button img */
+.card-button img:hover + .tooltip {
+    opacity: 1;
+    transform: translateX(50px); /* Use transform instead of translate for animation */
+}
+
+.card-button img:hover, .social-icons img:hover{
     animation: shake-rotate 0.5s;
 }
 
