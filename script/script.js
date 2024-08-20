@@ -30,7 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
             typeSpeed: 70,
             loop: true,
         });
-
+        window.setTimeout(function () {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://assets.calendly.com/assets/external/widget.js';
+            document.querySelector('head').appendChild(script);
+        }, 3000);
     });
 });
 
