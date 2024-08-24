@@ -160,7 +160,7 @@ section h3{
     align-items: center;
     flex-wrap: wrap;
     p {
-        font-size: 0.75rem;
+        font-size: clamp(0.75rem, 1vw, 1rem);
         font-weight: 400;
         letter-spacing: 0.2rem;
         border: 2px solid var(--light-grey);
