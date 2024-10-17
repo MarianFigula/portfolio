@@ -54,6 +54,7 @@ html {
     font-weight: 400;
     background-color: var(--background-color-dark);
     scroll-behavior: smooth;
+    scroll-padding-top: 15vh;
 }
 body{
     height: 100vh;
