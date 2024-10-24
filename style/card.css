@@ -46,7 +46,7 @@
         margin: 1rem auto;
         box-shadow: 0 5px 20px black;
         aspect-ratio: 2/1;
-        transition: all 500ms ease;
+        transition: all 0.5s cubic-bezier(.56,-0.02,.51,.97);
         &:hover{
             transform: scale(1.05);
             cursor: pointer;
