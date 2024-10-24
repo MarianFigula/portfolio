@@ -46,6 +46,11 @@
         margin: 1rem auto;
         box-shadow: 0 5px 20px black;
         aspect-ratio: 2/1;
+        transition: all 500ms ease;
+        &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
     }
 }
 
@@ -91,6 +96,7 @@
 
 .card-button img:hover, .social-icons img:hover{
     animation: shake-rotate 0.5s;
+    animation-timing-function: ease-in-out;
 }
 
 @property --angle {
