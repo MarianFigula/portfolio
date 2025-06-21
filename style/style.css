@@ -139,7 +139,7 @@ section h3{
 
 
 .me-image {
-    height: 70vh;
+    height: 400px;
     object-fit: cover;
     border-radius: 32px;
     margin: 0 auto;
@@ -505,7 +505,7 @@ footer {
     }
 
     .me-image {
-        height: 60vh;
+        height: 400px;
     }
 
     .grid-item{
@@ -549,7 +549,7 @@ footer {
         width: 80vw;
     }
     .me-image{
-        height: 50vh;
+        height: 300px;
     }
     .cv-button::after{
         translate: 0 2.25rem;

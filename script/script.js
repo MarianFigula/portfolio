@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0
+        threshold: 0.4
     });
 
     autoShowElements.forEach(el => observer.observe(el));
