@@ -63,7 +63,7 @@ html {
 }
 body{
     height: -webkit-fill-available;
-    height: 100dvh;
+    height: 100%;
     background-color: var(--background-color-dark);
 }
 
@@ -301,9 +301,9 @@ section h3{
 /* -- header -- */
 header.welcome-section{
     width: 100%;
-    height: 110dvh;
+    height: 800px;
     color: var(--white);
-    padding: 25dvh 5% 2dvh 15vw;
+    padding: 200px 5% 20px 15vw;
 }
 .welcome-text{
     font-size: clamp(3rem, 7vw, 6rem);
@@ -319,7 +319,7 @@ header.welcome-section{
 }
 
 .button-container{
-    margin-top: 10dvh;
+    margin-top: 100px;
 }
 
 .cv-button{
@@ -371,7 +371,7 @@ header.welcome-section{
 
 .scroll-down-icon {
     position: absolute;
-    bottom: 10rem;
+    bottom: 8rem;
     left: 50%;
     translate: -50% 0;
     width: 40px;
@@ -452,7 +452,7 @@ header.welcome-section{
 
 footer {
     width: 100%;
-    min-height: 100dvh;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,11 +520,11 @@ footer {
     }
     section h2, header.welcome-section{
         text-align: center;
-        padding: 25dvh 0 2dvh;
+        padding: 200px 0 20px;
     }
     header.welcome-section {
-        height: 100dvh;
-        padding: 20dvh 0 2dvh;
+        height: 700px;
+        padding: 150px 0 20px;
     }
     section h2::after {
         margin: 1px auto 0 auto;
