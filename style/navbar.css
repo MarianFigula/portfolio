@@ -15,7 +15,7 @@
 
 nav {
     width: 100%;
-    padding: 10vh 0;
+    padding: 10dvh 0;
     position: fixed;
     margin: 0 auto;
     background-color: var(--background-color-dark);
@@ -68,14 +68,14 @@ nav ul li a:hover {
     position: fixed;
     z-index: 2;
     right: 6vw;
-    top: 5vh;
+    top: 5dvh;
     opacity: 1;
 }
 
 .language {
     position: absolute;
     right: 3vw;
-    top: 5.4vh;
+    top: 5.4dvh;
     font-size: 1.6rem;
     font-weight: 600;
 }
