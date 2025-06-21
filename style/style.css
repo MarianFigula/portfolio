@@ -62,7 +62,8 @@ html {
     min-height: 100%;
 }
 body{
-    min-height: 100dvh;
+    height: 100dvh;
+    height: -webkit-fill-available;
     background-color: var(--background-color-dark);
 }
 
