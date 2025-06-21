@@ -17,6 +17,24 @@ const typedStringsSK = [
     "Technický nadšenec",
 ]
 
+document.addEventListener('DOMContentLoaded', function() {
+    const autoShowElements = document.querySelectorAll('.auto-show');
+    const revealed = new Set();
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !revealed.has(entry.target)) {
+                entry.target.classList.add('revealed');
+                revealed.add(entry.target);
+            }
+        });
+    }, {
+        threshold: 0
+    });
+
+    autoShowElements.forEach(el => observer.observe(el));
+});
+
 // preloader
 document.addEventListener('DOMContentLoaded', function() {
     // Hide preloader and show main content after the window is fully loaded

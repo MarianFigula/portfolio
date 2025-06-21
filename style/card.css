@@ -10,14 +10,29 @@
 
 .card {
     width: 30vw;
-    padding: 1em 2em;
+    padding: 2em 2.5em;
     color: var(--white);
-    border-radius: 24px;
+    border-radius: 28px;
     text-align: left;
     position: relative;
-    background: linear-gradient(145deg, #00222c, #00303d);
-    box-shadow:  24px 24px 35px #000d10,
-    -24px -24px 35px #003342;
+    background: rgba(20, 33, 61, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 0.3s cubic-bezier(.56,-0.02,.51,.97), box-shadow 0.3s, border 0.3s;
+    animation: cardFadeIn 0.8s ease;
+}
+
+.card:hover {
+    transform: scale(1.035) translateY(-6px);
+    box-shadow: 0 16px 40px 0 rgba(0,166,225,0.18), 0 2px 8px 0 rgba(0,0,0,0.18);
+    border: 1.5px solid var(--primary-blue);
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(40px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .card-header{
@@ -26,37 +41,43 @@
 }
 
 .card-title{
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .card-content {
     text-align: left;
     padding: 0 0 0.75em 0;
-    line-height: 1.5em;
-    font-size: 0.9em;
+    line-height: 1.6em;
+    font-size: 1em;
 }
 
 .card-image {
-    border-radius: 10px;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-        margin: 1rem auto;
-        box-shadow: 0 5px 20px black;
-        aspect-ratio: 2/1;
-        transition: all 0.5s cubic-bezier(.56,-0.02,.51,.97);
-        &:hover{
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-    }
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 1.2em;
+}
+.card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 0 auto;
+    box-shadow: 0 4px 16px rgba(0,166,225,0.10);
+    aspect-ratio: 2/1;
+    transition: transform 0.4s cubic-bezier(.56,-0.02,.51,.97), box-shadow 0.4s;
+}
+.card-image img:hover{
+    transform: scale(1.06);
+    box-shadow: 0 8px 32px rgba(0,166,225,0.18);
+    cursor: pointer;
 }
 
 .card-description {
     padding: 0.5em 0;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    color: var(--card-white);
 }
 
 .card-footer {
@@ -81,58 +102,27 @@
     position: absolute;
     font-size: 1.25rem;
     left: 0;
-    top: 15px;
+    top: 18px;
     opacity: 0;
     font-weight: 600;
     transition: all 0.5s ease;
     pointer-events: none;
 }
 
-/* Trigger tooltip animation when hovering over the .card-button img */
 .card-button img:hover + .tooltip {
     opacity: 1;
-    transform: translateX(50px); /* Use transform instead of translate for animation */
+    transform: translateX(50px);
 }
 
-.card-button img:hover, .social-icons img:hover{
-    animation: shake-rotate 0.5s;
-    animation-timing-function: ease-in-out;
+.social-icons img {
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+.social-icons img:hover{
+    transform: scale(1.15);
+    filter: brightness(1.2) saturate(1.1);
 }
+
 .card::after, .card::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    /*background: linear-gradient(90deg, #a8dadc 30%, #457b9d 50%, #1d3557);*/
-    /*background-image: conic-gradient(#f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0, #f72585);*/
-    background-image: conic-gradient(from var(--angle),
-    transparent 1%,
-    var(--primary-blue), var(--primary-light-blue), var(--card-white), var(--primary-blue));
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    border-radius: 27px;
-    z-index: -1;
-    animation: 10s spin linear infinite;
-}
-
-.card::before{
-    filter: blur(6rem);
-    opacity: 1;
-}
-
-
-@keyframes spin {
-    from {
-        --angle: 0deg;
-    }
-    to {
-        --angle: 360deg;
-    }
+    content: none;
 }
