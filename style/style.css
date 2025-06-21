@@ -357,7 +357,6 @@ header.welcome-section{
     background-image:  conic-gradient(from var(--angle),
     transparent 1%, var(--primary-blue),var(--primary-light-blue), var(--card-white),
     var(--primary-blue));
-    z-index: -1;
     padding: 10px;
     filter: blur(5rem);
     border-radius: 15px;
