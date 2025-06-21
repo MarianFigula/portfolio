@@ -61,7 +61,7 @@ html {
     scroll-padding-top: 15dvh;
 }
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .linear-gradient-text{
@@ -115,7 +115,7 @@ section h3{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     /*grid-column-gap: 15vw;*/
-    grid-row-gap: 3vh;
+    grid-row-gap: 3dvh;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -155,7 +155,7 @@ section h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 5vh;
+    grid-row-gap: 5dvh;
     grid-column-gap: 8vw;
     align-items: center;
     justify-content: center;
@@ -494,7 +494,7 @@ footer {
     .language {
         position: absolute;
         left: 6vw;
-        top: 5.5vh;
+        top: 5.5dvh;
     }
 
 }
@@ -527,7 +527,7 @@ footer {
         margin: 1px auto 0 auto;
     }
     nav {
-        padding: 3vh 0;
+        padding: 3dvh 0;
     }
     nav ul{
         flex-direction: column;
