@@ -61,7 +61,7 @@ html {
     scroll-padding-top: 15dvh;
 }
 body{
-    height: 100dvh;
+    min-height: 100vh;
 }
 
 .linear-gradient-text{
