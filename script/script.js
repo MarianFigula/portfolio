@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     autoShowElements.forEach(el => observer.observe(el));
+    
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.querySelector('.footer-copyright');
+    if (copyrightElement) {
+        copyrightElement.innerHTML += ` ${currentYear}`;
+    }
 });
 
 // preloader
