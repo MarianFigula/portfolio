@@ -17,17 +17,53 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta name="description"
-          content="A portfolio website of a web developer, tech enthusiast,
-          fast learner and student Marian Figula where people can see
-          his projects from real world. They can also contact him via mail
-          or schedule a meeting using calendly. The website is in Slovak language.">
+          content="Marián Figula - Portfólio Web Developera. Full-stack developer špecializujúci sa na HTML, CSS, JavaScript, PHP, ReactJS. Pozrite si moje projekty vrátane Resap, Intrasy a ďalších. Kontaktujte ma pre príležitosti v oblasti web developmentu.">
+    <meta name="keywords" content="Marián Figula, web developer, frontend developer, backend developer, JavaScript, PHP, ReactJS, HTML, CSS, portfólio, Slovensko, Bratislava, STU">
+    <meta name="author" content="Marián Figula">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Marián Figula - Portfólio Web Developera">
+    <meta property="og:description" content="Full-stack web developer špecializujúci sa na moderné webové technológie. Pozrite si moje projekty a kontaktujte ma pre spoluprácu.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marianfigula.github.io/portfolio/sk/">
+    <meta property="og:image" content="https://marianfigula.github.io/portfolio/assets/photo-me.JPG">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marián Figula - Portfólio Web Developera">
+    <meta name="twitter:description" content="Full-stack web developer špecializujúci sa na moderné webové technológie.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marián Figula</title>
+    <link rel="canonical" href="https://marianfigula.github.io/portfolio/sk/">
+    <title>Marián Figula - Portfólio Web Developera | Full-Stack Developer</title>
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/card.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/preloader.css">
-
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marián Figula",
+        "jobTitle": "Web Developer",
+        "description": "Full-stack web developer špecializujúci sa na HTML, CSS, JavaScript, PHP a ReactJS",
+        "url": "https://marianfigula.github.io/portfolio/sk/",
+        "image": "https://marianfigula.github.io/portfolio/assets/photo-me.JPG",
+        "sameAs": [
+            "https://github.com/MarianFigula",
+            "https://www.linkedin.com/in/mari%C3%A1n-figula-167b871b1/",
+            "https://www.instagram.com/majo_figula/",
+            "https://www.facebook.com/majo5555/"
+        ],
+        "knowsAbout": ["Web Development", "JavaScript", "PHP", "ReactJS", "HTML", "CSS", "Database Management", "UI/UX Design"],
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "Slovenská Technická Univerzita v Bratislave"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance Web Developer"
+        }
+    }
+    </script>
 </head>
 <body>
 
@@ -63,9 +99,9 @@
 
 <header class="welcome-section">
     <h1 class="welcome-text">Marián Figula</h1>
-    <span id="typed-text" class="typed"></span>
+    <p class="typed" id="typed-text"></p>
     <div class="button-container">
-        <button class="cv-button linear-gradient-text" id="download-cv">Stiahnúť CV</button>
+        <button class="cv-button linear-gradient-text" id="download-cv">Stiahnuť CV</button>
     </div>
     <img src="../assets/chevron-double-down.svg" class="scroll-down-icon" alt="scroll down">
 </header>
