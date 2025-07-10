@@ -4,16 +4,14 @@ const isSk = window.location.href.includes("sk")
 
 const typedStringsEN = [
     "Web Developer",
-    "Frontend Developer",
-    "Student",
+    "Backend Developer",
     "Eager for knowledge",
     "Tech Enthusiast",
     "Fast learner"
 ]
 const typedStringsSK = [
     "Web Developer",
-    "Frontend Developer",
-    "Študent",
+    "Backend Developer",
     "Technický nadšenec",
 ]
 
