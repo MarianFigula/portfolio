@@ -1,27 +1,34 @@
-import {useRef, useState} from 'react';
+import {useState} from 'react';
 import {Mail, Send, Calendar, MapPin} from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-    const form = useRef(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
 
+        const form = e.currentTarget;
+
         try {
+            if (!form.current) {
+                console.error('Form reference is null');
+                setIsSubmitting(false);
+                return;
+            }
             await emailjs.sendForm(
                 'service_f41gdwm',
                 'template_v3mrdc5',
-                form.current, {
+                form.current!, {
                     publicKey: 'UWfx0PhazET9YyLHf'
                 }
             )
 
             alert("Email sent successfully!")
-            form.current?.reset()
+
+            form.current.reset()
         } catch (error) {
             console.error("Failed to send email:", error);
             alert("Failed to send email. Please try again later.");
@@ -50,7 +57,7 @@ const Contact = () => {
                             <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-[var(--shadow-soft)]">
                                 <h3 className="text-2xl font-bold mb-6 text-foreground">Send me a message</h3>
 
-                                <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+                                <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="space-y-2 text-left">
                                         <label htmlFor="name" className="text-sm font-medium">
                                             Your Name
