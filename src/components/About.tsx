@@ -16,7 +16,7 @@ const About = () => {
                             <div className="relative w-full max-w-md mx-auto">
                                 <div className="aspect-square rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] border border-border/50">
                                     <img
-                                        src="/src/assets/photo-me.JPG"
+                                        src="/assets/photo-me.JPG"
                                         alt="Marián Figula - Web Developer"
                                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                     />

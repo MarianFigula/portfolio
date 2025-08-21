@@ -16,7 +16,7 @@ const Projects = () => {
             title: 'Resap',
             description: 'A comprehensive web application that allows users and companies to create and manage reservations efficiently.',
             details: 'I handled both frontend and backend development using JavaScript and PHP, creating a seamless booking experience.',
-            image: './src/assets/resap.png',
+            image: './assets/resap.png',
             link: 'https://app.resap.sk',
             isGithubLink: false,
             tags: ['JavaScript', 'PHP', 'Full-Stack', 'Database']
@@ -25,7 +25,7 @@ const Projects = () => {
             title: 'Intrasy',
             description: 'Web and mobile application enabling users to monitor their rides without purchasing GPS devices.',
             details: 'As frontend developer, I focused on creating intuitive UI/UX that makes ride tracking simple and accessible.',
-            image: './src/assets/intrasy.png',
+            image: './assets/intrasy.png',
             link: 'https://intrasy.sk',
             isGithubLink: false,
             tags: ['Frontend', 'Bootstrap', 'Metronic']
@@ -37,7 +37,7 @@ const Projects = () => {
             title: 'ScandiTrack',
             description: 'Price tracker for IKEA products just by product URL.',
             details: 'Created an web application to track prices of IKEA product. After user enters the url, the IKEA product info displays. After entering email and price threshold, the product is track with confirmation emails.',
-            image: './src/assets/scandi-icon.png',
+            image: './assets/scandi-icon.png',
             link: 'https://scanditrack.vercel.app/',
             isGithubLink: false,
             tags: ['NextJS', 'Typescript', 'Vercel', 'Cron Job', 'Full-Stack']
@@ -46,7 +46,7 @@ const Projects = () => {
             title: 'Clipboard PDF Text Changer',
             description: 'Automated solution for fixing special character encoding issues when copying text from PDF files.',
             details: 'Created an executable application that automatically corrects Slovak special characters, saving time and ensuring text readability.',
-            image: './src/assets/copy-paste.png',
+            image: './assets/copy-paste.png',
             link: 'https://github.com/MarianFigula/Clipboard-pdf-text-changer',
             isGithubLink: true,
             tags: ['Python', 'Automation', 'Desktop App']
@@ -55,7 +55,7 @@ const Projects = () => {
             title: 'TickTick Chrome Extension',
             description: 'Web extension that automatically adds university gym workout sessions to TickTick planning app.',
             details: 'Integrates with TickTick API to streamline workout planning by automatically importing session times and dates.',
-            image: './src/assets/ticktick.png',
+            image: './assets/ticktick.png',
             link: 'https://github.com/MarianFigula/Ticktick-Chrome-Extension',
             isGithubLink: true,
             tags: ['Chrome Extension', 'API Integration', 'JavaScript']
@@ -67,7 +67,7 @@ const Projects = () => {
             title: 'Book Management API',
             description: 'RESTful API server for comprehensive book management with full CRUD operations.',
             details: 'Built with Java Spring Boot applying OOP principles for scalable book database management.',
-            image: './src/assets/books.jpg',
+            image: './assets/books.jpg',
             link: 'https://github.com/MarianFigula/API---books',
             isGithubLink: true,
             tags: ['Java', 'Spring Boot', 'REST API', 'OOP']
@@ -76,7 +76,7 @@ const Projects = () => {
             title: 'School Task Management System',
             description: 'Full-featured task system for teachers and students built with Laravel and Docker.',
             details: 'Led team development of a platform where teachers assign tasks and evaluate student submissions.',
-            image: './src/assets/tasks.jpg',
+            image: './assets/tasks.jpg',
             link: 'https://github.com/MarianFigula/Tasks-System',
             isGithubLink: true,
             tags: ['Laravel', 'Docker', 'Team Lead', 'Full-Stack']
@@ -85,7 +85,7 @@ const Projects = () => {
             title: 'Olympians management system',
             description: 'Task system for olympians and users.',
             details: 'Web app with role-based access: admins manage olympians, while users can view them. Implemented authentication via Google and Google Authenticator.',
-            image: './src/assets/medals.png',
+            image: './assets/medals.png',
             link: 'https://github.com/MarianFigula/Tasks-System',
             isGithubLink: true,
             tags: ['PHP', 'Bootstrap', 'Google Auth', 'Full-Stack']
@@ -94,7 +94,7 @@ const Projects = () => {
             title: 'Machine Learning Projects',
             description: 'Neural network implementations for music mood classification and car price prediction.',
             details: 'Explored ML concepts through practical applications including Spotify song categorization and predictive modeling.',
-            image: './src/assets/machine-learning.jpg',
+            image: './assets/machine-learning.jpg',
             link: 'https://github.com/MarianFigula/Machine-Learning-and-Neural-Networks',
             isGithubLink: true,
             tags: ['Python', 'Machine Learning', 'Neural Networks', 'Data Science']
