@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-    const form = useRef<HTMLFormElement>(null);
+    const form = useRef(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
