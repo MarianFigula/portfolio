@@ -1,10 +1,10 @@
 
 const Footer = () => {
     const socialLinks = [
-        { href: 'https://github.com/MarianFigula', icon: '/src/assets/github.svg', label: 'GitHub' },
+        { href: 'https://github.com/MarianFigula', icon: './assets/github.svg', label: 'GitHub' },
         { href: 'https://www.linkedin.com/in/mari%C3%A1n-figula-167b871b1/', icon: '/src/assets/linkedin.svg', label: 'LinkedIn' },
-        { href: 'https://www.instagram.com/majo_figula/', icon: '/src/assets/instagram.svg', label: 'Instagram' },
-        { href: 'https://www.facebook.com/majo5555/', icon: '/src/assets/facebook.svg', label: 'Facebook' }
+        { href: 'https://www.instagram.com/majo_figula/', icon: './assets/instagram.svg', label: 'Instagram' },
+        { href: 'https://www.facebook.com/majo5555/', icon: './assets/facebook.svg', label: 'Facebook' }
     ];
 
     return (

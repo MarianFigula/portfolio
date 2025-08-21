@@ -21,7 +21,7 @@ const Hero = () => {
 
     const handleDownloadPdf = () => {
         const link = document.createElement('a');
-        link.href = '/src/assets/CV.pdf';
+        link.href = './assets/CV.pdf';
         link.download = 'CV.pdf';
         link.dispatchEvent(new MouseEvent('click'));
     }
