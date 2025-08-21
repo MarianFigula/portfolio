@@ -13,7 +13,7 @@ const Contact = () => {
         const form = e.currentTarget;
 
         try {
-            if (!form.current) {
+            if (!form) {
                 console.error('Form reference is null');
                 setIsSubmitting(false);
                 return;
@@ -21,14 +21,14 @@ const Contact = () => {
             await emailjs.sendForm(
                 'service_f41gdwm',
                 'template_v3mrdc5',
-                form.current!, {
+                form, {
                     publicKey: 'UWfx0PhazET9YyLHf'
                 }
             )
 
             alert("Email sent successfully!")
 
-            form.current.reset()
+            form.reset()
         } catch (error) {
             console.error("Failed to send email:", error);
             alert("Failed to send email. Please try again later.");
