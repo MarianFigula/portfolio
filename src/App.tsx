@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="min-h-screen">
             <Header />
-            <main>
+            <main role="main">
                 <Hero />
                 <About />
                 <Skills />

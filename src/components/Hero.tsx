@@ -51,7 +51,11 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-                        <button className="btn-primary inline-flex items-center gap-2 group" onClick={handleDownloadPdf}>
+                        <button
+                            className="btn-primary inline-flex items-center gap-2 group"
+                            onClick={handleDownloadPdf}
+                            aria-label='Download CV of Marian Figula'
+                        >
                             <Download size={20} className="group-hover:animate-bounce" />
                             Download CV
                         </button>

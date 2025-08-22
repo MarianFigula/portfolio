@@ -108,11 +108,11 @@ const Projects = () => {
         >
             <div className="relative overflow-hidden rounded-xl mb-6">
                 {project.image ? (
-                    <img
+                    <a href={project.link}> <img
                         src={project.image}
                         alt={project.title}
                         className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
+                    /></a>
             ) : (
                 <div className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"></div>
                     )}
