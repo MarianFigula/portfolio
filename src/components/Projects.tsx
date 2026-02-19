@@ -173,25 +173,34 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
     const imageEl = (
         <div className="relative w-full h-64 md:h-full min-h-[280px] overflow-hidden rounded-xl group/img border border-border">
             {project.image ? (
-                <>
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <img
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105"
                     />
-                    <div className="absolute inset-0 bg-background/30 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 rounded-xl" />
-                </>
+                    <div
+                        className="absolute inset-0 bg-background/60 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
+                        <button className="text-primary font-semibold tracking-wide px-4 py-2 cursor-pointer">
+                            {project.isGithubLink ? 'View Code' : 'Visit Site'}
+                        </button>
+                    </div>
+                </a>
             ) : (
-                <ImagePlaceholder n={index + 1} />
+                <ImagePlaceholder n={index + 1}/>
             )}
         </div>
     );
 
     const detailsEl = (
         <div className="relative flex flex-col justify-center gap-4 py-4 md:py-8">
-            <ProjectNumber n={index + 1} />
+            <ProjectNumber n={index + 1}/>
             <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight z-10">
-                {project.title}
+            {project.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed z-10">{project.description}</p>
             <p className="text-sm text-muted-foreground z-10">{project.details}</p>
