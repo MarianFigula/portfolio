@@ -8,7 +8,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-card border-t border-border/50 min-h-screen flex items-center justify-center">
+        <footer className="border-t border-border/50 min-h-screen flex items-center justify-center">
             <div className="container px-6 py-12">
                 <div className="max-w-6xl mx-auto text-center space-y-8">
 

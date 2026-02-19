@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-background:        hsl(195, 100%, 8%);
+  --color-foreground:        hsl(195, 15%,  95%);
+  --color-card:              hsl(195, 50%,  12%);
+  --color-card-foreground:   hsl(195, 15%,  95%);
+  --color-primary:           hsl(194, 95%,  55%);
+  --color-primary-foreground:hsl(195, 100%, 8%);
+  --color-primary-light:     hsl(194, 85%,  65%);
+  --color-secondary:         hsl(195, 30%,  18%);
+  --color-secondary-foreground: hsl(195, 15%, 95%);
+  --color-muted:             hsl(195, 25%,  16%);
+  --color-muted-foreground:  hsl(195, 10%,  70%);
+  --color-accent:            hsl(195, 35%,  20%);
+  --color-accent-foreground: hsl(195, 15%,  95%);
+  --color-border:            hsl(195, 20%,  25%);
+  --color-input:             hsl(195, 25%,  16%);
+  --color-ring:              hsl(194, 95%,  55%);
+}
+
 /* Dark Portfolio Design System */
 :root {
   /* Dark background system - your preferred #002029 style */
@@ -47,22 +67,6 @@
   /* Animation variables */
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.text-primary {
-  color: hsl(var(--primary)) !important;
-}
-
-.text-primary-light {
-  color: hsl(var(--primary-light)) !important;
-}
-
-.bg-primary {
-  background-color: hsl(var(--primary)) !important;
-}
-
-.bg-primary-light {
-  background-color: hsl(var(--primary-light)) !important;
 }
 
 .dark {
