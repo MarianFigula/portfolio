@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Mail, Send, Calendar, MapPin} from 'lucide-react';
+import {Mail, Send, Calendar, MapPin, Phone} from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 
@@ -134,6 +134,15 @@ const Contact = () => {
                                         </div>
                                         <div>
                                             <p className="text-muted-foreground">majofigulam3@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center gap-4">
+                                        <div className="p-3 rounded-xl bg-primary/10 text-primary">
+                                            <Phone size={20}/>
+                                        </div>
+                                        <div>
+                                            <p className="text-muted-foreground">+421 951 832 795</p>
                                         </div>
                                     </div>
 
