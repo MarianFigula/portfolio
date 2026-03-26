@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marianfigula.github.io/portfolio/sitemap.xml
+Sitemap: https://marianfigula.com/sitemap.xml
