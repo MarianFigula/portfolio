@@ -1,4 +1,98 @@
+# ============================================================
+# robots.txt — marianfigula.com
+# Last updated: 2026-04-01
+# ============================================================
+
+# --- Default: allow all crawlers ---
 User-agent: *
 Allow: /
+Crawl-delay: 5
 
-Sitemap: https://marianfigula.github.io/portfolio/sitemap.xml
+# --- Google (Search + AI Overviews / Gemini) ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# --- OpenAI (ChatGPT / GPT-4o browsing) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic (Claude) ---
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# --- Microsoft (Bing + Copilot) ---
+User-agent: Bingbot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+# --- Perplexity AI ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- Meta (Meta AI) ---
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# --- Apple (Apple Intelligence / Siri) ---
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- ByteDance / TikTok AI ---
+User-agent: Bytespider
+Allow: /
+
+# --- You.com ---
+User-agent: YouBot
+Allow: /
+
+# --- Cohere ---
+User-agent: cohere-ai
+Allow: /
+
+# --- Common Crawl (used by many AI training pipelines) ---
+User-agent: CCBot
+Allow: /
+
+# --- Diffbot (AI knowledge graph) ---
+User-agent: Diffbot
+Allow: /
+
+# --- Amazon (Alexa / Bedrock) ---
+User-agent: Amazonbot
+Allow: /
+
+# --- AI2 (Allen Institute) ---
+User-agent: AI2Bot
+Allow: /
+
+# ============================================================
+# Sitemaps
+# ============================================================
+Sitemap: https://marianfigula.com/sitemap.xml
+
+# AI-specific resources (not standard Sitemap directives — informational only)
+# AI Index: https://marianfigula.com/ai-index.json
+# LLMs text: https://marianfigula.com/llms.txt
