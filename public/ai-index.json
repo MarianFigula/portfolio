@@ -1,0 +1,113 @@
+{
+  "$schema": "https://marianfigula.com/ai-index-schema.json",
+  "version": "1.0",
+  "generated": "2026-04-01",
+  "site": {
+    "name": "Marián Figula Portfolio",
+    "url": "https://marianfigula.com",
+    "description": "Professional portfolio of Marián Figula — Full-Stack Web Developer from Bratislava, Slovakia, specializing in React, JavaScript, PHP, and modern web technologies.",
+    "language": "en",
+    "type": "portfolio",
+    "sitemap": "https://marianfigula.com/sitemap.xml",
+    "llms_txt": "https://marianfigula.com/llms.txt"
+  },
+  "owner": {
+    "name": "Marián Figula",
+    "alternateName": "Majo Figula",
+    "jobTitle": "Full-Stack Web Developer",
+    "email": "majofigulam3@gmail.com",
+    "location": {
+      "city": "Bratislava",
+      "country": "Slovakia",
+      "coordinates": {
+        "lat": 48.1486,
+        "lng": 17.1077
+      }
+    },
+    "education": "Faculty of Electrical Engineering and Information Technology, STU Bratislava",
+    "experience_years": 3,
+    "profiles": {
+      "github": "https://github.com/MarianFigula",
+      "linkedin": "https://www.linkedin.com/in/marián-figula-167b871b1/",
+      "instagram": "https://www.instagram.com/majo_figula/",
+      "facebook": "https://www.facebook.com/majo5555/"
+    },
+    "cv": {
+      "en": "https://marianfigula.com/assets/CV.pdf",
+      "sk": "https://marianfigula.com/assets/CV_sk.pdf"
+    }
+  },
+  "skills": {
+    "programming_languages": ["JavaScript", "TypeScript", "PHP", "Python", "SQL", "HTML", "CSS"],
+    "frameworks_libraries": ["React", "Laravel", "Tailwind CSS", "Node.js"],
+    "tools": ["Git", "Docker", "Vite", "Webpack"],
+    "domains": ["Web Development", "Full-Stack Development", "UI/UX Design", "Machine Learning", "Artificial Intelligence"]
+  },
+  "projects": [
+    {
+      "name": "Stribog",
+      "type": "professional",
+      "description": "Real-world web application project",
+      "image": "https://marianfigula.com/assets/stribog.png",
+      "url": "https://marianfigula.com/#projects"
+    },
+    {
+      "name": "Instaview",
+      "type": "professional",
+      "description": "Real-world web application project",
+      "image": "https://marianfigula.com/assets/instaview.png",
+      "url": "https://marianfigula.com/#projects"
+    },
+    {
+      "name": "Resap",
+      "type": "professional",
+      "description": "Real-world web application project",
+      "image": "https://marianfigula.com/assets/resap.png",
+      "url": "https://marianfigula.com/#projects"
+    },
+    {
+      "name": "ScandiTrack",
+      "type": "personal",
+      "description": "Personal project — ScandiTrack application",
+      "image": "https://marianfigula.com/assets/scandi-icon.png",
+      "url": "https://marianfigula.com/#projects"
+    },
+    {
+      "name": "Clipboard PDF Text Changer",
+      "type": "personal",
+      "description": "Personal tool for PDF text manipulation",
+      "image": "https://marianfigula.com/assets/copy-paste.png",
+      "url": "https://marianfigula.com/#projects"
+    },
+    {
+      "name": "TickTick Chrome Extension",
+      "type": "personal",
+      "description": "Chrome browser extension for TickTick task manager",
+      "image": "https://marianfigula.com/assets/ticktick.png",
+      "url": "https://marianfigula.com/#projects"
+    }
+  ],
+  "contact": {
+    "email": "majofigulam3@gmail.com",
+    "booking_url": "https://calendly.com",
+    "page": "https://marianfigula.com/#contact"
+  },
+  "ai_policy": {
+    "indexing_allowed": true,
+    "training_allowed": true,
+    "attribution_required": true,
+    "attribution_text": "Content from marianfigula.com — Marián Figula, Full-Stack Web Developer"
+  },
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marián Figula",
+    "url": "https://marianfigula.com",
+    "jobTitle": "Full-Stack Web Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bratislava",
+      "addressCountry": "SK"
+    }
+  }
+}

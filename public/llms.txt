@@ -1,0 +1,50 @@
+# Marián Figula — Full-Stack Web Developer Portfolio
+
+> Personal portfolio of Marián Figula, a Full-Stack Web Developer from Bratislava, Slovakia.
+> Site: https://marianfigula.com
+
+## About
+
+Marián Figula (also known as Majo Figula) is a Full-Stack Web Developer with 3+ years of experience, graduated from the Faculty of Electrical Engineering and Information Technology at STU Bratislava. He specializes in modern web technologies including React, JavaScript, PHP, and Laravel.
+
+## Skills
+
+- **Programming Languages:** JavaScript, TypeScript, PHP, Python, SQL, HTML, CSS
+- **Frameworks & Libraries:** React, Laravel, Tailwind CSS, Node.js
+- **Tools:** Git, Docker, Vite
+- **Domains:** Full-Stack Development, UI/UX Design, Machine Learning, Artificial Intelligence
+
+## Projects
+
+### Professional / Real-World Projects
+- **Stribog** — Real-world web application
+- **Instaview** — Real-world web application
+- **Everlution** — Real-world web application
+- **Resap** — Real-world web application
+
+### Personal Projects
+- **ScandiTrack** — Personal productivity/tracking application
+- **Clipboard PDF Text Changer** — Tool for manipulating PDF text via clipboard
+- **TickTick Chrome Extension** — Browser extension for the TickTick task manager
+
+## Contact
+
+- **Email:** majofigulam3@gmail.com
+- **GitHub:** https://github.com/MarianFigula
+- **LinkedIn:** https://www.linkedin.com/in/marián-figula-167b871b1/
+- **Instagram:** https://www.instagram.com/majo_figula/
+- **Facebook:** https://www.facebook.com/majo5555/
+- **CV (EN):** https://marianfigula.com/assets/CV.pdf
+- **CV (SK):** https://marianfigula.com/assets/CV_sk.pdf
+- **Book a meeting:** https://marianfigula.com/#contact
+
+## AI Indexing Policy
+
+This site explicitly permits AI crawlers to index and surface its content.
+Attribution: "Marián Figula — Full-Stack Web Developer, marianfigula.com"
+
+## Machine-Readable Resources
+
+- Sitemap: https://marianfigula.com/sitemap.xml
+- AI Index: https://marianfigula.com/ai-index.json
+- Robots: https://marianfigula.com/robots.txt
