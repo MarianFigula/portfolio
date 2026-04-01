@@ -92,4 +92,7 @@ Allow: /
 # Sitemaps
 # ============================================================
 Sitemap: https://marianfigula.com/sitemap.xml
-Sitemap: https://marianfigula.com/ai-index.json
+
+# AI-specific resources (not standard Sitemap directives — informational only)
+# AI Index: https://marianfigula.com/ai-index.json
+# LLMs text: https://marianfigula.com/llms.txt
