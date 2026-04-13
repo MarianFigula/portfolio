@@ -1,98 +1,84 @@
 import { useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { Project } from '../lib/definitions.ts';
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
-const realWorldProjects: Project[] = [
-    {
-        title: 'Fullstack developer at Stribog',
-        description: 'All-in-one SaaS platform for small entrepreneurs to manage their entire business.',
-        details:
-            'Worked across the full stack: React frontend, Kotlin/Spring Boot backend, database design, DevOps, and even a secure desktop app built with Flutter and C++.',
-        image: './assets/stribog.png',
-        link: 'https://stribog.app/',
-        isGithubLink: false,
-        tags: ['React', 'Kotlin', 'Spring Boot', 'DevOps', 'Flutter', 'C++'],
-    },
-    {
-        title: 'Fullstack developer at Instaview',
-        description: 'AI-powered HR platform that autonomously calls job candidates, conducts language assessments, and sources talent directly from LinkedIn.',
-        details:
-            'Focused primarily on backend development - infrastructure that power AI-driven candidate calls. Worked extensively with concurrency, caching, and Redis to keep the system fast and reliable under load.',
-        image: './assets/instaview.png',
-        link: 'https://www.instaview.sk/',
-        isGithubLink: false,
-        tags: ['NextJS', 'NestJS', 'Docker', 'AI', 'Redis'],
-    },
-    {
-        title: 'Junior PHP developer at Everlution',
-        description: 'Taking care of 3 projects after 8 months under a senior developer.',
-        details:
-            'Building web apps using Symfony, designing backend logic and APIs. Maintaining and upgrading existing systems by fixing bugs, adding features, and improving performance and security.',
-        image: '',
-        link: '',
-        isGithubLink: false,
-        tags: ['PHP', 'Symfony', 'Docker', 'Full-Stack', 'Database'],
-    },
-    {
-        title: 'Resap',
-        description:
-            'A comprehensive web application that allows users and companies to create and manage reservations efficiently.',
-        details:
-            'I handled both frontend and backend development using JavaScript and PHP, creating a seamless booking experience.',
-        image: './assets/resap.png',
-        link: 'https://app.resap.sk',
-        isGithubLink: false,
-        tags: ['JavaScript', 'PHP', 'Full-Stack', 'Database'],
-    },
-    // {
-    //     title: 'Intrasy',
-    //     description:
-    //         'Web and mobile application enabling users to monitor their rides without purchasing GPS devices.',
-    //     details:
-    //         'As frontend developer, I focused on creating intuitive UI/UX that makes ride tracking simple and accessible.',
-    //     image: './assets/intrasy.png',
-    //     link: 'https://intrasy.sk',
-    //     isGithubLink: false,
-    //     tags: ['Frontend', 'Bootstrap', 'Metronic'],
-    // },
-];
+function useRealWorldProjects(): Project[] {
+    const { t } = useTranslation();
+    return [
+        {
+            title: t('projects.realWorld.stribog.title'),
+            description: t('projects.realWorld.stribog.description'),
+            details: t('projects.realWorld.stribog.details'),
+            image: './assets/stribog.png',
+            link: 'https://stribog.app/',
+            isGithubLink: false,
+            tags: ['React', 'Kotlin', 'Spring Boot', 'DevOps', 'Flutter', 'C++'],
+        },
+        {
+            title: t('projects.realWorld.instaview.title'),
+            description: t('projects.realWorld.instaview.description'),
+            details: t('projects.realWorld.instaview.details'),
+            image: './assets/instaview.png',
+            link: 'https://www.instaview.sk/',
+            isGithubLink: false,
+            tags: ['NextJS', 'NestJS', 'Docker', 'AI', 'Redis'],
+        },
+        {
+            title: t('projects.realWorld.everlution.title'),
+            description: t('projects.realWorld.everlution.description'),
+            details: t('projects.realWorld.everlution.details'),
+            image: '',
+            link: '',
+            isGithubLink: false,
+            tags: ['PHP', 'Symfony', 'Docker', 'Full-Stack', 'Database'],
+        },
+        {
+            title: t('projects.realWorld.resap.title'),
+            description: t('projects.realWorld.resap.description'),
+            details: t('projects.realWorld.resap.details'),
+            image: './assets/resap.png',
+            link: 'https://app.resap.sk',
+            isGithubLink: false,
+            tags: ['JavaScript', 'PHP', 'Full-Stack', 'Database'],
+        },
+    ];
+}
 
-const personalProjects: Project[] = [
-    {
-        title: 'ScandiTrack',
-        description: 'Price tracker for IKEA products just by product URL.',
-        details:
-            'Created a web application to track prices of IKEA products. After a user enters the URL, the IKEA product info displays. After entering an email and price threshold, the product is tracked with confirmation emails.',
-        image: './assets/scandi-icon.png',
-        link: 'https://scanditrack.vercel.app/',
-        isGithubLink: false,
-        tags: ['NextJS', 'Typescript', 'Vercel', 'Cron Job', 'Full-Stack'],
-    },
-    {
-        title: 'Clipboard PDF Text Changer',
-        description:
-            'Automated solution for fixing special character encoding issues when copying text from PDF files.',
-        details:
-            'Created an executable application that automatically corrects Slovak special characters, saving time and ensuring text readability.',
-        image: './assets/copy-paste.png',
-        link: 'https://github.com/MarianFigula/Clipboard-pdf-text-changer',
-        isGithubLink: true,
-        tags: ['Python', 'Automation', 'Desktop App'],
-    },
-    {
-        title: 'TickTick Chrome Extension',
-        description:
-            'Web extension that automatically adds university gym workout sessions to TickTick planning app.',
-        details:
-            'Integrates with TickTick API to streamline workout planning by automatically importing session times and dates.',
-        image: './assets/ticktick.png',
-        link: 'https://github.com/MarianFigula/Ticktick-Chrome-Extension',
-        isGithubLink: true,
-        tags: ['Chrome Extension', 'API Integration', 'JavaScript'],
-    },
-];
+function usePersonalProjects(): Project[] {
+    const { t } = useTranslation();
+    return [
+        {
+            title: t('projects.personal.scanditrack.title'),
+            description: t('projects.personal.scanditrack.description'),
+            details: t('projects.personal.scanditrack.details'),
+            image: './assets/scandi-icon.png',
+            link: 'https://scanditrack.vercel.app/',
+            isGithubLink: false,
+            tags: ['NextJS', 'Typescript', 'Vercel', 'Cron Job', 'Full-Stack'],
+        },
+        {
+            title: t('projects.personal.clipboardPdf.title'),
+            description: t('projects.personal.clipboardPdf.description'),
+            details: t('projects.personal.clipboardPdf.details'),
+            image: './assets/copy-paste.png',
+            link: 'https://github.com/MarianFigula/Clipboard-pdf-text-changer',
+            isGithubLink: true,
+            tags: ['Python', 'Automation', 'Desktop App'],
+        },
+        {
+            title: t('projects.personal.ticktick.title'),
+            description: t('projects.personal.ticktick.description'),
+            details: t('projects.personal.ticktick.details'),
+            image: './assets/ticktick.png',
+            link: 'https://github.com/MarianFigula/Ticktick-Chrome-Extension',
+            isGithubLink: true,
+            tags: ['Chrome Extension', 'API Integration', 'JavaScript'],
+        },
+    ];
+}
 
 // ─── Scroll-reveal hook ───────────────────────────────────────────────────────
 
@@ -143,6 +129,7 @@ function ImagePlaceholder({ n }: { n: number }) {
 }
 
 function ProjectLink({ link, isGithubLink }: { link: string; isGithubLink: boolean }) {
+    const { t } = useTranslation();
     if (!link) return null;
     return (
         <a
@@ -153,11 +140,11 @@ function ProjectLink({ link, isGithubLink }: { link: string; isGithubLink: boole
         >
             {isGithubLink ? (
                 <>
-                    <Github size={16} /> GitHub
+                    <Github size={16} /> {t('projects.github')}
                 </>
             ) : (
                 <>
-                    <ExternalLink size={16} /> Live Website
+                    <ExternalLink size={16} /> {t('projects.liveWebsite')}
                 </>
             )}
         </a>
@@ -167,6 +154,7 @@ function ProjectLink({ link, isGithubLink }: { link: string; isGithubLink: boole
 // ─── SplitRow ─────────────────────────────────────────────────────────────────
 
 function SplitRow({ project, index }: { project: Project; index: number }) {
+    const { t } = useTranslation();
     const { ref, visible } = useScrollReveal();
     const imageOnRight = index % 2 === 0; // 1st, 3rd… → image right; 2nd, 4th… → image left
 
@@ -186,7 +174,7 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
                     <div
                         className="absolute inset-0 bg-background/60 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
                         <button className="text-primary font-semibold tracking-wide px-4 py-2 cursor-pointer">
-                            {project.isGithubLink ? 'View Code' : 'Visit Site'}
+                            {project.isGithubLink ? t('projects.viewCode') : t('projects.visitSite')}
                         </button>
                     </div>
                 </a>
@@ -244,18 +232,23 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
 
 type Category = 'realworld' | 'personal';
 
-const TABS: { id: Category; label: string }[] = [
-    { id: 'realworld', label: 'Real World' },
-    { id: 'personal', label: 'Personal' },
-];
-
-const PROJECT_MAP: Record<Category, Project[]> = {
-    realworld: realWorldProjects,
-    personal: personalProjects,
-};
-
 export default function Projects() {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState<Category>('realworld');
+
+    const realWorldProjects = useRealWorldProjects();
+    const personalProjects = usePersonalProjects();
+
+    const TABS: { id: Category; label: string }[] = [
+        { id: 'realworld', label: t('projects.tabs.realWorld') },
+        { id: 'personal', label: t('projects.tabs.personal') },
+    ];
+
+    const PROJECT_MAP: Record<Category, Project[]> = {
+        realworld: realWorldProjects,
+        personal: personalProjects,
+    };
+
     const projects = PROJECT_MAP[activeTab];
 
     return (
@@ -266,7 +259,7 @@ export default function Projects() {
                     {/* Header */}
                     <div className="text-left mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-                            Work And Projects
+                            {t('projects.title')}
                         </h2>
                         <div className="w-20 h-1 bg-primary rounded-full mb-8" />
 

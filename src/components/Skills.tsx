@@ -1,23 +1,44 @@
 import { Code, Database, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+    const { t } = useTranslation();
+
     const skillCategories = [
         {
-            title: 'Programming Languages & Tools',
+            title: t('skills.categories.programmingLanguages'),
             icon: Code,
             skills: ['HTML/CSS', 'PHP', 'JavaScript', 'React', 'Symfony', 'NextJS', 'SQL', 'Git', 'Python', 'Docker', 'Jira'],
             color: 'from-blue-500 to-cyan-500'
         },
         {
-            title: 'Hard Skills',
+            title: t('skills.categories.hardSkills'),
             icon: Database,
-            skills: ['Software Development', 'Database Management', 'UI/UX Design', 'Testing', 'Version Control', 'Coding', 'Machine Learning & AI'],
+            skills: [
+                t('skills.items.softwareDevelopment'),
+                t('skills.items.databaseManagement'),
+                t('skills.items.uiUxDesign'),
+                t('skills.items.testing'),
+                t('skills.items.versionControl'),
+                t('skills.items.coding'),
+                t('skills.items.machineLearningAi'),
+            ],
             color: 'from-black/60 to-grey-400'
         },
         {
-            title: 'Soft Skills',
+            title: t('skills.categories.softSkills'),
             icon: Users,
-            skills: ['Creativity', 'Empathy', 'Time Management', 'Adaptability', 'Curiosity', 'Open-mindedness', 'Team Working', 'Communication', 'Passion for Learning'],
+            skills: [
+                t('skills.items.creativity'),
+                t('skills.items.empathy'),
+                t('skills.items.timeManagement'),
+                t('skills.items.adaptability'),
+                t('skills.items.curiosity'),
+                t('skills.items.openMindedness'),
+                t('skills.items.teamWorking'),
+                t('skills.items.communication'),
+                t('skills.items.passionForLearning'),
+            ],
             color: 'from-purple-500 to-pink-500'
         }
     ];
@@ -28,11 +49,11 @@ const Skills = () => {
                 <div className="max-w-6xl mx-auto">
                     <div className="text-left mb-16 animate-fade-up">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                            My Skills
+                            {t('skills.title')}
                         </h2>
                         <div className="w-20 h-1 bg-gradient-to-r text-primary bg-primary"></div>
                         <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                            A comprehensive toolkit built through years of learning, practicing, and real-world application
+                            {t('skills.subtitle')}
                         </p>
                     </div>
 

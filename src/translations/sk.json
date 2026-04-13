@@ -1,0 +1,135 @@
+{
+  "header": {
+    "about": "O mne",
+    "skills": "Zručnosti",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "role": "Full-Stack Web Developer",
+    "description": "Web developer so záujmom o vývoj moderných webových aplikácií. Premieňam nápady na funkčné riešenia a neustále sa zlepšujem v tvorbe prehľadných a používateľsky prívetivých aplikácií.",
+    "downloadCv": "Stiahnuť CV",
+    "downloadCvAriaLabel": "Stiahnuť CV Mariána Figulu"
+  },
+  "about": {
+    "title": "O mne",
+    "imageAlt": "Marián Figula - Web Developer",
+    "greeting": "Ahoj! Volám sa Marián Figula",
+    "paragraph1": "Som web developer a absolvent Fakulty elektrotechniky a informatiky STU v Bratislave, odbor Aplikovaná informatika.",
+    "paragraph2": "Programovanie ma nadchlo už na strednej škole a odvtedy ma neprestalo baviť. Možnosť <bold>tvoriť</bold> a <bold>vytvárať</bold> niečo nové s <bold>kreativitou</bold> sú hlavné dôvody, prečo ma tento odbor napĺňa.",
+    "paragraph3": "Mojím cieľom je vyvíjať projekty, ktoré riešia reálne problémy a automatizujú opakujúce sa úlohy. Špecializujem sa na vývoj webových aplikácií s využitím technológií ako HTML, CSS, JavaScript, ReactJS, NextJS, Kotlin a podobne.",
+    "paragraph4": "Rád sledujem najnovšie trendy v oblasti <bold>strojového učenia</bold> a <bold>umelej inteligencie</bold> a neustále ma fascinujú nové technológie."
+  },
+  "skills": {
+    "title": "Moje zručnosti",
+    "subtitle": "Zručnosti získané a rozvíjané vďaka praxi a práci na reálnych projektoch",
+    "categories": {
+      "programmingLanguages": "Programovacie jazyky a nástroje",
+      "hardSkills": "Technické zručnosti",
+      "softSkills": "Mäkké zručnosti"
+    },
+    "items": {
+      "softwareDevelopment": "Vývoj softvéru",
+      "databaseManagement": "Správa databáz",
+      "uiUxDesign": "UI/UX Dizajn",
+      "testing": "Testovanie",
+      "versionControl": "Správa verzií",
+      "coding": "Programovanie",
+      "machineLearningAi": "Strojové učenie a AI",
+      "creativity": "Kreativita",
+      "empathy": "Empatia",
+      "timeManagement": "Časový manažment",
+      "adaptability": "Prispôsobivosť",
+      "curiosity": "Zvedavosť",
+      "openMindedness": "Otvorenosť",
+      "teamWorking": "Tímová spolupráca",
+      "communication": "Komunikácia",
+      "passionForLearning": "Chuť učiť sa"
+    }
+  },
+  "projects": {
+    "title": "Práca a projekty",
+    "tabs": {
+      "realWorld": "Komerčné",
+      "personal": "Osobné"
+    },
+    "viewCode": "Zobraziť kód",
+    "visitSite": "Navštíviť stránku",
+    "github": "GitHub",
+    "liveWebsite": "Link na web",
+    "realWorld": {
+      "stribog": {
+        "title": "Fullstack developer v Stribog",
+        "description": "Komplexná SaaS platforma pre malých podnikateľov na správu celého ich podnikania.",
+        "details": "Pracoval som naprieč celým stackom: React frontend, Kotlin/Spring Boot backend, návrh databázy, DevOps a dokonca aj bezpečná desktopová aplikácia vo Flutter a C++."
+      },
+      "instaview": {
+        "title": "Fullstack developer v Instaview",
+        "description": "HR platforma poháňaná AI, ktorá automaticky telefonuje kandidátom, hodnotí jazykové schopnosti a vyhľadáva talenty priamo na platforme LinkedIn.",
+        "details": "Primárne som sa zameriaval na backend – infraštruktúru pre AI hovory s kandidátmi. Okrem iného som pracoval s konkurentnosťou, cachovaním a Redisom, aby systém zostal rýchly a spoľahlivý aj pri vysokej záťaži."
+      },
+      "everlution": {
+        "title": "Junior PHP developer v Everlution",
+        "description": "Starostlivosť o 3 projekty po 8 mesiacoch pod vedením senior developera.",
+        "details": "Tvorba webových aplikácií v Symfony, návrh backendovej logiky a API. Údržba a vylepšovanie existujúcich systémov - oprava chýb, pridávanie funkcií a zlepšovanie výkonu a bezpečnosti."
+      },
+      "resap": {
+        "title": "Resap",
+        "description": "Webová aplikácia umožňujúca používateľom a firmám jednoducho vytvárať a spravovať rezervácie.",
+        "details": "Mal som na starosti frontend aj backend vývoj v JavaScripte a PHP, kde som vytvoril plynulý rezervačný systém."
+      }
+    },
+    "personal": {
+      "scanditrack": {
+        "title": "ScandiTrack",
+        "description": "Sledovanie cien produktov z IKEA len pomocou URL adresy.",
+        "details": "Vytvoril som webovú aplikáciu na sledovanie cien produktov z IKEA. Po zadaní URL sa zobrazia informácie o produkte. Po zadaní emailu a cenovej hranice sa produkt sleduje a používateľ dostáva notifikácie."
+      },
+      "clipboardPdf": {
+        "title": "Clipboard PDF Text Changer",
+        "description": "Automatizované riešenie problémov s kódovaním špeciálnych znakov pri kopírovaní textu z PDF súborov.",
+        "details": "Vytvoril som spustiteľnú aplikáciu, ktorá automaticky opravuje slovenské špeciálne znaky, čím šetrí čas a zabezpečuje čitateľnosť textu."
+      },
+      "ticktick": {
+        "title": "TickTick Chrome Rozšírenie",
+        "description": "Rozšírenie do prehliadača, ktoré automaticky pridáva univerzitné cvičenia do plánovacej aplikácie TickTick.",
+        "details": "Napojenie na TickTick API pre zjednodušenie plánovania tréningov automatickým importom časov a dátumov cvičení."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontaktujte ma",
+    "subtitle": "Poďme sa porozprávať o vašom ďalšom projekte, alebo sa jednoducho ozvite. Som vždy otvorený novým príležitostiam a zaujímavým rozhovorom.",
+    "form": {
+      "heading": "Napíšte mi správu",
+      "nameLabel": "Vaše meno",
+      "namePlaceholder": "Zadajte vaše meno",
+      "emailLabel": "Emailová adresa",
+      "emailPlaceholder": "Zadajte váš email",
+      "messageLabel": "Správa",
+      "messagePlaceholder": "Napíšte mi o vašom projekte alebo sa jednoducho pozdravte...",
+      "sending": "Odosielam...",
+      "sendMessage": "Odoslať správu"
+    },
+    "info": {
+      "heading": "Spojme sa",
+      "location": "Bratislava, Slovensko"
+    },
+    "meeting": {
+      "heading": "Naplánujte si stretnutie",
+      "description": "Preferujete osobný rozhovor? Rezervujte si 45-minútové stretnutie a preberieme váš projekt do detailov.",
+      "bookButton": "Rezervovať stretnutie"
+    },
+    "alerts": {
+      "success": "Email bol úspešne odoslaný!",
+      "error": "Odoslanie emailu zlyhalo. Skúste to prosím neskôr."
+    }
+  },
+  "languageSwitcher": {
+    "switchToEnglish": "Prepnúť na angličtinu",
+    "switchToSlovak": "Prepnúť na slovenčinu"
+  },
+  "footer": {
+    "copyright": "© {{year}} Marián Figula."
+  }
+}

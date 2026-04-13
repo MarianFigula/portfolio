@@ -1,0 +1,135 @@
+{
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Full-Stack Web Developer",
+    "description": "Junior web developer passionate about building modern web apps. I enjoy turning ideas into real projects and learning how to make clean, user-friendly experiences along the way.",
+    "downloadCv": "Download CV",
+    "downloadCvAriaLabel": "Download CV of Marian Figula"
+  },
+  "about": {
+    "title": "About Me",
+    "imageAlt": "Marián Figula - Web Developer",
+    "greeting": "Hello! I'm Marián Figula",
+    "paragraph1": "I'm a Web Developer who graduated from the Faculty of Electrical Engineering and Information Technology of STU in Bratislava, specializing in Applied Informatics.",
+    "paragraph2": "Programming has been my passion since high school, and I've never stopped enjoying it. The opportunity to <bold>build</bold> and <bold>create</bold> with <bold>creativity</bold> are the main reasons why this field fulfills me.",
+    "paragraph3": "My goal is to develop projects that solve real-world problems and automate repetitive tasks. I specialize in web application development, focusing on technologies like HTML, CSS, JavaScript, PHP, and ReactJS.",
+    "paragraph4": "I love exploring the latest developments in <bold>machine learning</bold> and <bold>artificial intelligence</bold>, always staying curious about emerging technologies."
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "A comprehensive toolkit built through years of learning, practicing, and real-world application",
+    "categories": {
+      "programmingLanguages": "Programming Languages & Tools",
+      "hardSkills": "Hard Skills",
+      "softSkills": "Soft Skills"
+    },
+    "items": {
+      "softwareDevelopment": "Software Development",
+      "databaseManagement": "Database Management",
+      "uiUxDesign": "UI/UX Design",
+      "testing": "Testing",
+      "versionControl": "Version Control",
+      "coding": "Coding",
+      "machineLearningAi": "Machine Learning & AI",
+      "creativity": "Creativity",
+      "empathy": "Empathy",
+      "timeManagement": "Time Management",
+      "adaptability": "Adaptability",
+      "curiosity": "Curiosity",
+      "openMindedness": "Open-mindedness",
+      "teamWorking": "Team Working",
+      "communication": "Communication",
+      "passionForLearning": "Passion for Learning"
+    }
+  },
+  "projects": {
+    "title": "Work And Projects",
+    "tabs": {
+      "realWorld": "Real World",
+      "personal": "Personal"
+    },
+    "viewCode": "View Code",
+    "visitSite": "Visit Site",
+    "github": "GitHub",
+    "liveWebsite": "Live Website",
+    "realWorld": {
+      "stribog": {
+        "title": "Fullstack developer at Stribog",
+        "description": "All-in-one SaaS platform for small entrepreneurs to manage their entire business.",
+        "details": "Worked across the full stack: React frontend, Kotlin/Spring Boot backend, database design, DevOps, and even a secure desktop app built with Flutter and C++."
+      },
+      "instaview": {
+        "title": "Fullstack developer at Instaview",
+        "description": "AI-powered HR platform that autonomously calls job candidates, conducts language assessments, and sources talent directly from LinkedIn.",
+        "details": "Focused primarily on backend development - infrastructure that power AI-driven candidate calls. Worked extensively with concurrency, caching, and Redis to keep the system fast and reliable under load."
+      },
+      "everlution": {
+        "title": "Junior PHP developer at Everlution",
+        "description": "Taking care of 3 projects after 8 months under a senior developer.",
+        "details": "Building web apps using Symfony, designing backend logic and APIs. Maintaining and upgrading existing systems by fixing bugs, adding features, and improving performance and security."
+      },
+      "resap": {
+        "title": "Resap",
+        "description": "A comprehensive web application that allows users and companies to create and manage reservations efficiently.",
+        "details": "I handled both frontend and backend development using JavaScript and PHP, creating a seamless booking experience."
+      }
+    },
+    "personal": {
+      "scanditrack": {
+        "title": "ScandiTrack",
+        "description": "Price tracker for IKEA products just by product URL.",
+        "details": "Created a web application to track prices of IKEA products. After a user enters the URL, the IKEA product info displays. After entering an email and price threshold, the product is tracked with confirmation emails."
+      },
+      "clipboardPdf": {
+        "title": "Clipboard PDF Text Changer",
+        "description": "Automated solution for fixing special character encoding issues when copying text from PDF files.",
+        "details": "Created an executable application that automatically corrects Slovak special characters, saving time and ensuring text readability."
+      },
+      "ticktick": {
+        "title": "TickTick Chrome Extension",
+        "description": "Web extension that automatically adds university gym workout sessions to TickTick planning app.",
+        "details": "Integrates with TickTick API to streamline workout planning by automatically importing session times and dates."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or just say hello. I'm always open to new opportunities and interesting conversations.",
+    "form": {
+      "heading": "Send me a message",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project or just say hello...",
+      "sending": "Sending...",
+      "sendMessage": "Send Message"
+    },
+    "info": {
+      "heading": "Let's connect",
+      "location": "Bratislava, Slovakia"
+    },
+    "meeting": {
+      "heading": "Schedule a meeting",
+      "description": "Prefer a direct conversation? Book a 45-minute meeting to discuss your project in detail.",
+      "bookButton": "Book a Meeting"
+    },
+    "alerts": {
+      "success": "Email sent successfully!",
+      "error": "Failed to send email. Please try again later."
+    }
+  },
+  "languageSwitcher": {
+    "switchToEnglish": "Switch to English",
+    "switchToSlovak": "Switch to Slovak"
+  },
+  "footer": {
+    "copyright": "© {{year}} Marián Figula."
+  }
+}

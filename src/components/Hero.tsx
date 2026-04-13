@@ -1,9 +1,11 @@
 import { ChevronDown, Download } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
     const [displayText, setDisplayText] = useState('');
-    const fullText = 'Full-Stack Web Developer';
+    const fullText = t('hero.role');
 
     useEffect(() => {
         let index = 0;
@@ -17,7 +19,7 @@ const Hero = () => {
         }, 100);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [fullText]);
 
     const handleDownloadPdf = () => {
         const link = document.createElement('a');
@@ -46,18 +48,17 @@ const Hero = () => {
                     </div>
 
                     <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Junior web developer passionate about building modern web apps.
-                        I enjoy turning ideas into real projects and learning how to make clean, user-friendly experiences along the way.
+                        {t('hero.description')}
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
                         <button
                             className="btn-primary inline-flex items-center gap-2 group"
                             onClick={handleDownloadPdf}
-                            aria-label='Download CV of Marian Figula'
+                            aria-label={t('hero.downloadCvAriaLabel')}
                         >
                             <Download size={20} className="group-hover:animate-bounce" />
-                            Download CV
+                            {t('hero.downloadCv')}
                         </button>
                     </div>
                 </div>

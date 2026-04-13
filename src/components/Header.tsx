@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector.tsx';
 
 const Header = () => {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -14,10 +17,10 @@ const Header = () => {
     }, []);
 
     const navLinks = [
-        { href: '#about', label: 'About' },
-        { href: '#skills', label: 'Skills' },
-        { href: '#projects', label: 'Projects' },
-        { href: '#contact', label: 'Contact' }
+        { href: '#about', label: t('header.about') },
+        { href: '#skills', label: t('header.skills') },
+        { href: '#projects', label: t('header.projects') },
+        { href: '#contact', label: t('header.contact') }
     ];
 
     return (
@@ -27,26 +30,32 @@ const Header = () => {
             <nav className="container mx-auto px-6 py-4">
                 <div className="flex items-center justify-between">
                     <div
-                        className="text-2xl font-bold bg-gradient-to-r text-primary bg-clip-text text-transparent">
+                        className="text-2xl font-bold bg-gradient-to-r text-primary bg-clip-text">
                         MF
                     </div>
-                    <ul className="hidden md:flex space-x-15">
-                        {navLinks.map((link) => (
-                            <li key={link.href}>
-                                <a href={link.href} className="nav-link">
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="hidden md:flex items-center gap-12">
+                        <ul className="flex space-x-15">
+                            {navLinks.map((link) => (
+                                <li key={link.href}>
+                                    <a href={link.href} className="nav-link">
+                                        {link.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                        <LanguageSelector />
+                    </div>
 
-                    <button
-                        className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors cursor-pointer"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
-                    </button>
+                    <div className="flex md:hidden items-center gap-3">
+                        <LanguageSelector />
+                        <button
+                            className="p-2 rounded-lg hover:bg-muted transition-colors cursor-pointer"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
+                        </button>
+                    </div>
                 </div>
 
                 {isMenuOpen && (

@@ -1,5 +1,7 @@
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
     const socialLinks = [
         { href: 'https://github.com/MarianFigula', icon: './assets/github.svg', label: 'GitHub' },
         { href: 'https://www.linkedin.com/in/mari%C3%A1n-figula-167b871b1/', icon: './assets/linkedin.svg', label: 'LinkedIn' },
@@ -14,7 +16,7 @@ const Footer = () => {
 
                     {/* Logo */}
                     <div className="inline-flex items-center gap-2 justify-center">
-                        <div className="text-3xl font-bold bg-gradient-to-r text-primary bg-clip-text text-transparent">
+                        <div className="text-3xl font-bold bg-gradient-to-r text-primary bg-clip-text">
                             MF
                         </div>
                     </div>
@@ -26,7 +28,7 @@ const Footer = () => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-3 bg-muted transition-transform transition duration-200 hover:scale-[1.15] hover:brightness-[1.2] hover:saturate-[1.1]"
+                                className="p-3 transition duration-200 hover:scale-[1.15] hover:brightness-[1.2] hover:saturate-[1.1]"
                                 aria-label={social.label}
                             >
                                 <img src={social.icon} width={36} alt={social.label}/>
@@ -36,7 +38,7 @@ const Footer = () => {
 
                     <div>
                         <p className="text-muted-foreground flex items-center justify-center gap-2">
-                            © {new Date().getFullYear()} Marián Figula.
+                            {t('footer.copyright', { year: new Date().getFullYear() })}
                         </p>
                     </div>
 
