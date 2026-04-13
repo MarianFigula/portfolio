@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- Main page -->
+    <!-- Single-page portfolio.-->
     <url>
         <loc>https://marianfigula.com/</loc>
-        <lastmod>2026-04-01</lastmod>
+        <lastmod>2026-04-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -14,66 +14,18 @@
         </image:image>
     </url>
 
-    <!-- Hero / intro anchor -->
+    <!-- AI-readable summary for LLM crawler -->
     <url>
-        <loc>https://marianfigula.com/#hero</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- About section -->
-    <url>
-        <loc>https://marianfigula.com/#about</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Skills section -->
-    <url>
-        <loc>https://marianfigula.com/#skills</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Projects section -->
-    <url>
-        <loc>https://marianfigula.com/#projects</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Contact section -->
-    <url>
-        <loc>https://marianfigula.com/#contact</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Downloadable CV -->
-    <url>
-        <loc>https://marianfigula.com/assets/CV.pdf</loc>
-        <lastmod>2026-04-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- AI index endpoint -->
-    <url>
-        <loc>https://marianfigula.com/ai-index.json</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://marianfigula.com/llms.txt</loc>
+        <lastmod>2026-04-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
 
-    <!-- LLMs text file -->
+    <!-- Structured AI index for machine consumption -->
     <url>
-        <loc>https://marianfigula.com/llms.txt</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://marianfigula.com/ai-index.json</loc>
+        <lastmod>2026-04-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
