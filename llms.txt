@@ -1,31 +1,31 @@
-# Marián Figula — Full-Stack Web Developer Portfolio
+# Marián Figula - Full-Stack Developer Portfolio
 
-> Personal portfolio of Marián Figula, a Full-Stack Web Developer from Bratislava, Slovakia.
+> Personal portfolio of Marián Figula, a Full-Stack Developer from Bratislava, Slovakia.
 > Site: https://marianfigula.com
 
 ## About
 
-Marián Figula (also known as Majo Figula) is a Full-Stack Web Developer with 3+ years of experience, graduated from the Faculty of Electrical Engineering and Information Technology at STU Bratislava. He specializes in modern web technologies including React, JavaScript, PHP, and Laravel.
+Marián Figula (also known as Majo Figula) is a Full-Stack Developer with 3+ years of experience, graduated from the Faculty of Electrical Engineering and Information Technology at STU Bratislava. He builds websites, internal systems, and custom digital solutions - from presentation sites to complex business applications and process automation.
 
 ## Skills
 
-- **Programming Languages:** JavaScript, TypeScript, PHP, Python, SQL, HTML, CSS
-- **Frameworks & Libraries:** React, Laravel, Tailwind CSS, Node.js
+- **Programming Languages:** JavaScript, TypeScript, Kotlin, SQL, HTML, CSS
+- **Frameworks & Libraries:** React, NextJS, NestJS, Spring Boot, Tailwind CSS, Node.js
 - **Tools:** Git, Docker, Vite
-- **Domains:** Full-Stack Development, UI/UX Design, Machine Learning, Artificial Intelligence
+- **Domains:** Full-Stack Development, UI/UX Design, Machine Learning, AI Integration, Process Automation
 
 ## Projects
 
 ### Professional / Real-World Projects
-- **Stribog** — Real-world web application
-- **Instaview** — Real-world web application
-- **Everlution** — Real-world web application
-- **Resap** — Real-world web application
+- **Stribog** - SaaS platform for entrepreneurs: invoices, payroll, orders, website and e-shop from one place. Full-stack including a desktop app with virtual drive file sync.
+- **Instaview** - Backend infrastructure for an AI-powered HR platform automating candidate screening with hundreds of parallel AI calls in real time.
+- **Everlution** - Development and maintenance of three live client projects across different industries: software for social organizations, an event discovery social network, and a winery e-shop.
+- **SMSolar** - Shopify plugin showing customers whether they qualify for a government subsidy covering up to 90% of solar installation costs, using regional air quality data.
 
 ### Personal Projects
-- **ScandiTrack** — Personal productivity/tracking application
-- **Clipboard PDF Text Changer** — Tool for manipulating PDF text via clipboard
-- **TickTick Chrome Extension** — Browser extension for the TickTick task manager
+- **ScandiTrack** - Price tracker for IKEA products - enter a URL, set a price threshold, and get email notifications when the price drops.
+- **Clipboard PDF Text Changer** - Executable app that automatically corrects Slovak special character encoding when copying text from PDFs.
+- **TickTick Chrome Extension** - Chrome extension that automatically imports university gym sessions into the TickTick planning app via API.
 
 ## Contact
 
@@ -41,7 +41,7 @@ Marián Figula (also known as Majo Figula) is a Full-Stack Web Developer with 3+
 ## AI Indexing Policy
 
 This site explicitly permits AI crawlers to index and surface its content.
-Attribution: "Marián Figula — Full-Stack Web Developer, marianfigula.com"
+Attribution: "Marián Figula - Full-Stack Developer, marianfigula.com"
 
 ## Machine-Readable Resources
 

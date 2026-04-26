@@ -1,5 +1,5 @@
 # ============================================================
-# robots.txt — marianfigula.com
+# robots.txt - marianfigula.com
 # Last updated: 2026-04-01
 # ============================================================
 
@@ -93,6 +93,6 @@ Allow: /
 # ============================================================
 Sitemap: https://marianfigula.com/sitemap.xml
 
-# AI-specific resources (not standard Sitemap directives — informational only)
+# AI-specific resources (not standard Sitemap directives - informational only)
 # AI Index: https://marianfigula.com/ai-index.json
 # LLMs text: https://marianfigula.com/llms.txt
