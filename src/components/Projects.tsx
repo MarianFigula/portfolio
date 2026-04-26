@@ -36,13 +36,13 @@ function useRealWorldProjects(): Project[] {
             tags: ['PHP', 'Symfony', 'Docker', 'Full-Stack', 'Database'],
         },
         {
-            title: t('projects.realWorld.resap.title'),
-            description: t('projects.realWorld.resap.description'),
-            details: t('projects.realWorld.resap.details'),
-            image: './assets/resap.png',
-            link: 'https://app.resap.sk',
+            title: t('projects.realWorld.smsolar.title'),
+            description: t('projects.realWorld.smsolar.description'),
+            details: t('projects.realWorld.smsolar.details'),
+            image: './assets/smsolar.png',
+            link: 'https://smsolar.sk/pages/navratnost-fotovoltiky',
             isGithubLink: false,
-            tags: ['JavaScript', 'PHP', 'Full-Stack', 'Database'],
+            tags: ['JavaScript', 'Shopify', 'API Integration', 'Plugin'],
         },
     ];
 }
@@ -159,7 +159,7 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
     const imageOnRight = index % 2 === 0; // 1st, 3rd… → image right; 2nd, 4th… → image left
 
     const imageEl = (
-        <div className="relative w-full h-64 md:h-full min-h-[280px] overflow-hidden rounded-xl group/img border border-border">
+        <div className="relative w-full h-64 md:h-[330px] overflow-hidden rounded-xl group/img border border-border self-center">
             {project.image ? (
                 <a
                     href={project.link}
@@ -190,7 +190,7 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight z-10">
             {project.title}
             </h3>
-            <p className="text-muted-foreground leading-relaxed z-10">{project.description}</p>
+            <p className="text-muted-foreground leading-relaxed z-10 my-5">{project.description}</p>
             <p className="text-sm text-muted-foreground z-10">{project.details}</p>
             <div className="flex flex-wrap gap-2 z-10">
                 {project.tags.map((tag) => (
@@ -254,7 +254,7 @@ export default function Projects() {
     return (
         <section id="projects" className="py-20">
             <div className="container mx-auto px-6">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-6xl mx-auto text-left">
 
                     {/* Header */}
                     <div className="text-left mb-12">

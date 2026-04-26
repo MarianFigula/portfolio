@@ -6,19 +6,18 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "role": "Full-Stack Web Developer",
-    "description": "Web developer so záujmom o vývoj moderných webových aplikácií. Premieňam nápady na funkčné riešenia a neustále sa zlepšujem v tvorbe prehľadných a používateľsky prívetivých aplikácií.",
-    "downloadCv": "Stiahnuť CV",
-    "downloadCvAriaLabel": "Stiahnuť CV Mariána Figulu"
+    "role": "Full-Stack Developer",
+    "description": "Navrhujem a vyvíjam weby, interné systémy a digitálne riešenia na mieru. Od prezentačných stránok až po komplexné firemné aplikácie a automatizáciu procesov.",
+    "consultation": "Nezáväzná konzultácia",
+    "viewProjects": "Pozrieť projekty"
   },
   "about": {
     "title": "O mne",
-    "imageAlt": "Marián Figula - Web Developer",
+    "imageAlt": "Marián Figula - Software Developer",
     "greeting": "Ahoj! Volám sa Marián Figula",
-    "paragraph1": "Som web developer a absolvent Fakulty elektrotechniky a informatiky STU v Bratislave, odbor Aplikovaná informatika.",
-    "paragraph2": "Programovanie ma nadchlo už na strednej škole a odvtedy ma neprestalo baviť. Možnosť <bold>tvoriť</bold> a <bold>vytvárať</bold> niečo nové s <bold>kreativitou</bold> sú hlavné dôvody, prečo ma tento odbor napĺňa.",
-    "paragraph3": "Mojím cieľom je vyvíjať projekty, ktoré riešia reálne problémy a automatizujú opakujúce sa úlohy. Špecializujem sa na vývoj webových aplikácií s využitím technológií ako HTML, CSS, JavaScript, ReactJS, NextJS, Kotlin a podobne.",
-    "paragraph4": "Rád sledujem najnovšie trendy v oblasti <bold>strojového učenia</bold> a <bold>umelej inteligencie</bold> a neustále ma fascinujú nové technológie."
+    "paragraph1": "Som <bold>software developer</bold> so zameraním na webové aplikácie, firemné systémy a riešenia na mieru. Pracujem na projektoch, kde je dôležitá spoľahlivosť, funkčnosť a reálny prínos pre biznis.",
+    "paragraph2": "Mám skúsenosti s vývojom <bold>interných systémov</bold>, <bold>webových aplikácií</bold> na mieru a <bold>automatizáciou procesov</bold>. Najviac ma napĺňajú projekty, ktoré ľudia reálne používajú a firmám šetria čas.",
+    "paragraph3": "Vyštudoval som <bold>Aplikovanú informatiku</bold> na FEI STU v Bratislave a priebežne sledujem a aplikujem nové technológie vrátane <bold>AI</bold>, ktoré dnes prinášajú nové možnosti pre firmy aj produkty."
   },
   "skills": {
     "title": "Moje zručnosti",
@@ -59,24 +58,24 @@
     "liveWebsite": "Link na web",
     "realWorld": {
       "stribog": {
-        "title": "Fullstack developer v Stribog",
-        "description": "Komplexná SaaS platforma pre malých podnikateľov na správu celého ich podnikania.",
-        "details": "Pracoval som naprieč celým stackom: React frontend, Kotlin/Spring Boot backend, návrh databázy, DevOps a dokonca aj bezpečná desktopová aplikácia vo Flutter a C++."
+        "title": "Stribog | Vývoj platformy SaaS",
+        "description": "SaaS platforma, vďaka ktorej podnikatelia riadia celý biznis z jedného miesta - od faktúr, miezd a objednávok až po vlastný web a e-shop, bez potreby kombinovať viacero nástrojov.",
+        "details": "Pracoval som na celom stacku - od frontendu cez backend až po desktopovú aplikáciu. Platforma pokrýva procesy, kde musí byť všetko finančne a právne správne. Desktopová aplikácia pracuje so súbormi ako s virtuálnym diskom - používateľ ich otvára a upravuje priamo v ľubovoľnom programe, zmeny sa synchronizujú automaticky."
       },
       "instaview": {
-        "title": "Fullstack developer v Instaview",
-        "description": "HR platforma poháňaná AI, ktorá automaticky telefonuje kandidátom, hodnotí jazykové schopnosti a vyhľadáva talenty priamo na platforme LinkedIn.",
-        "details": "Primárne som sa zameriaval na backend – infraštruktúru pre AI hovory s kandidátmi. Okrem iného som pracoval s konkurentnosťou, cachovaním a Redisom, aby systém zostal rýchly a spoľahlivý aj pri vysokej záťaži."
+        "title": "Instaview | Automatizácia náboru cez AI",
+        "description": "Navrhol a implementoval som backendovú infraštruktúru pre revolučnú HR platformu, ktorá pomocou umelej inteligencie plne automatizuje prvý kontakt a screening kandidátov.",
+        "details": "Mojou úlohou bolo zabezpečiť, aby systém bezchybne zvládal stovky paralelných AI hovorov v reálnom čase. Vďaka optimalizácii výkonu a architektúre zameranej na stabilitu som pomohol vytvoriť produkt, ktorý firmám šetrí takmer polovicu nákladov na nábor a úplne eliminuje manuálnu prácu v úvodnej fáze hiringu."
       },
       "everlution": {
-        "title": "Junior PHP developer v Everlution",
-        "description": "Starostlivosť o 3 projekty po 8 mesiacoch pod vedením senior developera.",
-        "details": "Tvorba webových aplikácií v Symfony, návrh backendovej logiky a API. Údržba a vylepšovanie existujúcich systémov - oprava chýb, pridávanie funkcií a zlepšovanie výkonu a bezpečnosti."
+        "title": "Everlution | Vývoj a údržba klientskych projektov",
+        "description": "Správa troch klientskych projektov z rôznych odvetví - softvér pre sociálne organizácie, sociálna sieť pre objavovanie eventov a e-shop pre vináreň.",
+        "details": "Zlepšené prihlasovanie, platby priamo v aplikácii, objavovanie eventov na základe GPS polohy. Sociálnym organizáciám uľahčené exporty dát potrebné na legislatívne reportovanie."
       },
-      "resap": {
-        "title": "Resap",
-        "description": "Webová aplikácia umožňujúca používateľom a firmám jednoducho vytvárať a spravovať rezervácie.",
-        "details": "Mal som na starosti frontend aj backend vývoj v JavaScripte a PHP, kde som vytvoril plynulý rezervačný systém."
+      "smsolar": {
+        "title": "SMSolar | Kalkulačka návratnosti fotovoltiky",
+        "description": "Plugin pre predajcu solárnych panelov, ktorý zákazníkom okamžite ukáže, či majú nárok na štátnu dotáciu až do výšky 90 % nákladov na inštaláciu.",
+        "details": "Kalkulačka pracuje s dátami o kvalite ovzdušia podľa lokality a prepája ich s podmienkami programu Zelená domácnostiam. Zákazník zadá adresu a ihneď vie, koľko môže získať späť od štátu - bez toho, aby musel sám hľadať informácie o programe."
       }
     },
     "personal": {

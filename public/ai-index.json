@@ -1,11 +1,11 @@
 {
   "$schema": "https://marianfigula.com/ai-index-schema.json",
   "version": "1.0",
-  "generated": "2026-04-01",
+  "generated": "2026-04-26",
   "site": {
     "name": "Marián Figula Portfolio",
     "url": "https://marianfigula.com",
-    "description": "Professional portfolio of Marián Figula — Full-Stack Web Developer from Bratislava, Slovakia, specializing in React, JavaScript, PHP, and modern web technologies.",
+    "description": "Professional portfolio of Marián Figula - Full-Stack Developer from Bratislava building websites, internal systems, and custom digital solutions. From presentation sites to complex business applications and process automation.",
     "language": "en",
     "type": "portfolio",
     "sitemap": "https://marianfigula.com/sitemap.xml",
@@ -14,7 +14,7 @@
   "owner": {
     "name": "Marián Figula",
     "alternateName": "Majo Figula",
-    "jobTitle": "Full-Stack Web Developer",
+    "jobTitle": "Full-Stack Developer",
     "email": "majofigulam3@gmail.com",
     "location": {
       "city": "Bratislava",
@@ -38,53 +38,59 @@
     }
   },
   "skills": {
-    "programming_languages": ["JavaScript", "TypeScript", "PHP", "Python", "SQL", "HTML", "CSS"],
-    "frameworks_libraries": ["React", "Laravel", "Tailwind CSS", "Node.js"],
+    "programming_languages": ["JavaScript", "TypeScript", "PHP", "Kotlin", "SQL", "HTML", "CSS"],
+    "frameworks_libraries": ["React", "NextJS", "NestJS", "Spring Boot", "Tailwind CSS", "Node.js"],
     "tools": ["Git", "Docker", "Vite", "Webpack"],
-    "domains": ["Web Development", "Full-Stack Development", "UI/UX Design", "Machine Learning", "Artificial Intelligence"]
+    "domains": ["Web Development", "Full-Stack Development", "UI/UX Design", "Machine Learning", "Artificial Intelligence", "AI Integration", "Business Systems", "Process Automation", "SaaS Development"]
   },
   "projects": [
     {
       "name": "Stribog",
       "type": "professional",
-      "description": "Real-world web application project",
+      "description": "SaaS platform for entrepreneurs - invoices, payroll, orders, website and e-shop from one place. Full-stack including desktop app with virtual drive file sync.",
       "image": "https://marianfigula.com/assets/stribog.png",
-      "url": "https://marianfigula.com/#projects"
+      "url": "https://stribog.app/"
     },
     {
       "name": "Instaview",
       "type": "professional",
-      "description": "Real-world web application project",
+      "description": "Backend infrastructure for an AI-powered HR platform automating first contact and candidate screening. Handles hundreds of parallel AI calls in real time.",
       "image": "https://marianfigula.com/assets/instaview.png",
+      "url": "https://www.instaview.sk/"
+    },
+    {
+      "name": "Everlution",
+      "type": "professional",
+      "description": "Development and maintenance of three live client projects across different industries: social org software, event discovery social network, and a winery e-shop.",
       "url": "https://marianfigula.com/#projects"
     },
     {
-      "name": "Resap",
+      "name": "SMSolar",
       "type": "professional",
-      "description": "Real-world web application project",
-      "image": "https://marianfigula.com/assets/resap.png",
-      "url": "https://marianfigula.com/#projects"
+      "description": "Shopify plugin showing customers whether they qualify for a government subsidy covering up to 90% of solar installation costs, using regional air quality data.",
+      "image": "https://marianfigula.com/assets/smsolar.png",
+      "url": "https://smsolar.sk/pages/navratnost-fotovoltiky"
     },
     {
       "name": "ScandiTrack",
       "type": "personal",
-      "description": "Personal project — ScandiTrack application",
+      "description": "Price tracker for IKEA products - enter a URL, set a price threshold, and get email notifications when the price drops.",
       "image": "https://marianfigula.com/assets/scandi-icon.png",
-      "url": "https://marianfigula.com/#projects"
+      "url": "https://scanditrack.vercel.app/"
     },
     {
       "name": "Clipboard PDF Text Changer",
       "type": "personal",
-      "description": "Personal tool for PDF text manipulation",
+      "description": "Executable app that automatically corrects Slovak special character encoding when copying text from PDFs.",
       "image": "https://marianfigula.com/assets/copy-paste.png",
-      "url": "https://marianfigula.com/#projects"
+      "url": "https://github.com/MarianFigula/Clipboard-pdf-text-changer"
     },
     {
       "name": "TickTick Chrome Extension",
       "type": "personal",
-      "description": "Chrome browser extension for TickTick task manager",
+      "description": "Chrome extension that automatically imports university gym sessions into the TickTick planning app via API.",
       "image": "https://marianfigula.com/assets/ticktick.png",
-      "url": "https://marianfigula.com/#projects"
+      "url": "https://github.com/MarianFigula/Ticktick-Chrome-Extension"
     }
   ],
   "contact": {
@@ -96,14 +102,14 @@
     "indexing_allowed": true,
     "training_allowed": true,
     "attribution_required": true,
-    "attribution_text": "Content from marianfigula.com — Marián Figula, Full-Stack Web Developer"
+    "attribution_text": "Content from marianfigula.com - Marián Figula, Full-Stack Developer"
   },
   "schema_org": {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Marián Figula",
     "url": "https://marianfigula.com",
-    "jobTitle": "Full-Stack Web Developer",
+    "jobTitle": "Full-Stack Developer",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Bratislava",

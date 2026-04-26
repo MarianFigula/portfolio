@@ -8,7 +8,7 @@ const Skills = () => {
         {
             title: t('skills.categories.programmingLanguages'),
             icon: Code,
-            skills: ['HTML/CSS', 'PHP', 'JavaScript', 'React', 'Symfony', 'NextJS', 'SQL', 'Git', 'Python', 'Docker', 'Jira'],
+            skills: ['HTML/CSS', 'PHP', 'JavaScript', 'React', 'Symfony', 'NextJS', 'SQL', 'Git', 'Kotlin', 'Docker', 'Jira'],
             color: 'from-blue-500 to-cyan-500'
         },
         {

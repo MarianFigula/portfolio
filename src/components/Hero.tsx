@@ -1,4 +1,4 @@
-import { ChevronDown, Download } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -20,13 +20,6 @@ const Hero = () => {
 
         return () => clearInterval(timer);
     }, [fullText]);
-
-    const handleDownloadPdf = () => {
-        const link = document.createElement('a');
-        link.href = './assets/CV.pdf';
-        link.download = 'CV.pdf';
-        link.dispatchEvent(new MouseEvent('click'));
-    }
 
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -51,15 +44,13 @@ const Hero = () => {
                         {t('hero.description')}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-                        <button
-                            className="btn-primary inline-flex items-center gap-2 group"
-                            onClick={handleDownloadPdf}
-                            aria-label={t('hero.downloadCvAriaLabel')}
-                        >
-                            <Download size={20} className="group-hover:animate-bounce" />
-                            {t('hero.downloadCv')}
-                        </button>
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+                        <a href="#contact" className="btn-primary inline-flex items-center gap-2">
+                            {t('hero.consultation')}
+                        </a>
+                        <a href="#projects" className="btn-outline inline-flex items-center gap-2">
+                            {t('hero.viewProjects')}
+                        </a>
                     </div>
                 </div>
 

@@ -33,7 +33,10 @@ const About = () => {
 
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p className="text-lg">
-                                    {t('about.paragraph1')}
+                                    <Trans
+                                        i18nKey="about.paragraph1"
+                                        components={{ bold: <span className="text-primary font-semibold" /> }}
+                                    />
                                 </p>
 
                                 <p>
@@ -44,12 +47,8 @@ const About = () => {
                                 </p>
 
                                 <p>
-                                    {t('about.paragraph3')}
-                                </p>
-
-                                <p>
                                     <Trans
-                                        i18nKey="about.paragraph4"
+                                        i18nKey="about.paragraph3"
                                         components={{ bold: <span className="text-primary font-semibold" /> }}
                                     />
                                 </p>

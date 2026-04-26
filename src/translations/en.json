@@ -6,19 +6,18 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "Full-Stack Web Developer",
-    "description": "Junior web developer passionate about building modern web apps. I enjoy turning ideas into real projects and learning how to make clean, user-friendly experiences along the way.",
-    "downloadCv": "Download CV",
-    "downloadCvAriaLabel": "Download CV of Marian Figula"
+    "role": "Full-Stack Developer",
+    "description": "I design and build websites, internal systems, and custom digital solutions. From presentation sites to complex business applications and process automation.",
+    "consultation": "Free Consultation",
+    "viewProjects": "View Projects"
   },
   "about": {
     "title": "About Me",
-    "imageAlt": "Marián Figula - Web Developer",
+    "imageAlt": "Marián Figula - Software Developer",
     "greeting": "Hello! I'm Marián Figula",
-    "paragraph1": "I'm a Web Developer who graduated from the Faculty of Electrical Engineering and Information Technology of STU in Bratislava, specializing in Applied Informatics.",
-    "paragraph2": "Programming has been my passion since high school, and I've never stopped enjoying it. The opportunity to <bold>build</bold> and <bold>create</bold> with <bold>creativity</bold> are the main reasons why this field fulfills me.",
-    "paragraph3": "My goal is to develop projects that solve real-world problems and automate repetitive tasks. I specialize in web application development, focusing on technologies like HTML, CSS, JavaScript, PHP, and ReactJS.",
-    "paragraph4": "I love exploring the latest developments in <bold>machine learning</bold> and <bold>artificial intelligence</bold>, always staying curious about emerging technologies."
+    "paragraph1": "I'm a <bold>software developer</bold> focused on web applications, business systems, and custom solutions. I work on projects where reliability, functionality, and real business value matter.",
+    "paragraph2": "I have experience building <bold>internal systems</bold>, <bold>custom web applications</bold>, and <bold>process automation</bold>. I get the most satisfaction from projects that people actually use and that save businesses time.",
+    "paragraph3": "I studied <bold>Applied Informatics</bold> at FEI STU in Bratislava and continuously learn and apply new technologies including <bold>AI</bold>, which today opens new possibilities for businesses and products."
   },
   "skills": {
     "title": "My Skills",
@@ -59,24 +58,24 @@
     "liveWebsite": "Live Website",
     "realWorld": {
       "stribog": {
-        "title": "Fullstack developer at Stribog",
-        "description": "All-in-one SaaS platform for small entrepreneurs to manage their entire business.",
-        "details": "Worked across the full stack: React frontend, Kotlin/Spring Boot backend, database design, DevOps, and even a secure desktop app built with Flutter and C++."
+        "title": "Stribog | SaaS Platform Development",
+        "description": "SaaS platform that lets entrepreneurs run their entire business from one place - from invoices, payroll and orders to their own website and e-shop, without juggling multiple tools.",
+        "details": "I worked across the full stack - from frontend and backend to a desktop application. The platform covers processes where financial and legal accuracy is critical. The desktop app works with files like a virtual drive - users open and edit them in any program, and changes sync back automatically."
       },
       "instaview": {
-        "title": "Fullstack developer at Instaview",
-        "description": "AI-powered HR platform that autonomously calls job candidates, conducts language assessments, and sources talent directly from LinkedIn.",
-        "details": "Focused primarily on backend development - infrastructure that power AI-driven candidate calls. Worked extensively with concurrency, caching, and Redis to keep the system fast and reliable under load."
+        "title": "Instaview | Recruitment Automation via AI",
+        "description": "I designed and implemented the backend infrastructure for a revolutionary HR platform that fully automates first contact and candidate screening using artificial intelligence.",
+        "details": "My role was to ensure the system could flawlessly handle hundreds of parallel AI calls in real time. Through performance optimization and a stability-focused architecture, I helped build a product that saves companies nearly half of their hiring costs and completely eliminates manual work in the initial hiring phase."
       },
       "everlution": {
-        "title": "Junior PHP developer at Everlution",
-        "description": "Taking care of 3 projects after 8 months under a senior developer.",
-        "details": "Building web apps using Symfony, designing backend logic and APIs. Maintaining and upgrading existing systems by fixing bugs, adding features, and improving performance and security."
+        "title": "Everlution | Client Project Development & Maintenance",
+        "description": "Management of three live client projects across different industries - software for social organizations, a social network for event discovery, and an e-shop for a winery.",
+        "details": "Improved login, in-app payments, and event discovery based on GPS location. Simplified data exports for social organizations required for legislative reporting."
       },
-      "resap": {
-        "title": "Resap",
-        "description": "A comprehensive web application that allows users and companies to create and manage reservations efficiently.",
-        "details": "I handled both frontend and backend development using JavaScript and PHP, creating a seamless booking experience."
+      "smsolar": {
+        "title": "SMSolar | Solar ROI Calculator",
+        "description": "A plugin for a solar panel retailer that instantly shows customers whether they qualify for a government subsidy covering up to 90% of installation costs.",
+        "details": "The calculator uses regional air quality data and cross-references it with the Zelená domácnostiam subsidy programme criteria. The customer enters their address and immediately knows how much they can get back from the state - without having to research the programme themselves."
       }
     },
     "personal": {
