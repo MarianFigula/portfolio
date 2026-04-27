@@ -15,8 +15,8 @@
     "title": "About Me",
     "imageAlt": "Marián Figula - Software Developer",
     "greeting": "Hello! I'm Marián Figula",
-    "paragraph1": "I'm a <bold>software developer</bold> focused on web applications, business systems, and custom solutions. I work on projects where reliability, functionality, and real business value matter.",
-    "paragraph2": "I have experience building <bold>internal systems</bold>, <bold>custom web applications</bold>, and <bold>process automation</bold>. I get the most satisfaction from projects that people actually use and that save businesses time.",
+    "paragraph1": "I work mostly with <bold>businesses</bold> that need software which actually solves their problem - no generic template, no unnecessary complexity, just something that works and earns its keep.",
+    "paragraph2": "I believe in <bold>clarity over complexity</bold>. Before I start coding, I want to understand the business - where time is being wasted and where money can be saved. The projects I'm proudest of are the ones where someone says \"this can save us several hours a week.\"",
     "paragraph3": "I studied <bold>Applied Informatics</bold> at FEI STU in Bratislava and continuously learn and apply new technologies including <bold>AI</bold>, which today opens new possibilities for businesses and products."
   },
   "skills": {
