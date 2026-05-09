@@ -159,7 +159,7 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
     const imageOnRight = index % 2 === 0; // 1st, 3rd… → image right; 2nd, 4th… → image left
 
     const imageEl = (
-        <div className="relative w-full h-64 md:h-[330px] overflow-hidden rounded-xl group/img border border-border self-center">
+        <div className="relative w-full h-64 md:h-[330px] overflow-hidden rounded-xl group/img border border-border self-center order-1 md:order-none">
             {project.image ? (
                 <a
                     href={project.link}
@@ -185,10 +185,10 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
     );
 
     const detailsEl = (
-        <div className="relative flex flex-col justify-center gap-4 py-4 md:py-8">
+        <div className="relative flex flex-col justify-center gap-4 py-4 md:py-8 order-2 md:order-none">
             <ProjectNumber n={index + 1}/>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight z-10">
-            {project.title}
+            <h3 className="hidden md:block text-2xl md:text-3xl font-bold text-foreground leading-tight z-10">
+                {project.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed z-10 my-5">{project.description}</p>
             <p className="text-sm text-muted-foreground z-10">{project.details}</p>
@@ -208,22 +208,32 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
     return (
         <div
             ref={ref}
-            className={`grid md:grid-cols-2 gap-8 md:gap-12 py-12 border-b border-border/50
+            className={`py-12 border-b border-border/50
         transition-all duration-700 ease-out
         ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: `${index * 80}ms` }}
         >
-            {imageOnRight ? (
-                <>
-                    {detailsEl}
-                    {imageEl}
-                </>
-            ) : (
-                <>
-                    {imageEl}
-                    {detailsEl}
-                </>
-            )}
+            {/* Mobile-only title, always rendered above image */}
+            <div className="md:hidden relative mb-6">
+                <ProjectNumber n={index + 1}/>
+                <h3 className="relative text-2xl font-bold text-foreground leading-tight z-10">
+                    {project.title}
+                </h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+                {imageOnRight ? (
+                    <>
+                        {detailsEl}
+                        {imageEl}
+                    </>
+                ) : (
+                    <>
+                        {imageEl}
+                        {detailsEl}
+                    </>
+                )}
+            </div>
         </div>
     );
 }
