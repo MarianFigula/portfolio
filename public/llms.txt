@@ -14,6 +14,15 @@ Marián Figula (also known as Majo Figula) is a Full-Stack Developer with 3+ yea
 - **Tools:** Git, Docker, Vite
 - **Domains:** Full-Stack Development, UI/UX Design, Machine Learning, AI Integration, Process Automation
 
+## Služby
+
+- [Tvorba webových stránok](https://marianfigula.com/weby/): Moderné weby pre firmy, živnostníkov a profesionálov v SR. Dizajn + SEO + optimalizácia pre AI vyhľadávanie.
+
+## Webové projekty
+
+- [Lechman - advokátska kancelária](https://www.lechman-advokat.sk/): Web pre advokátsku kanceláriu.
+- [BELLegis](https://bellegis.sk/): Web pre realitné a podnikateľské poradenstvo.
+
 ## Projects
 
 ### Professional / Real-World Projects

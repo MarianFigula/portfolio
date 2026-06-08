@@ -18,8 +18,8 @@ export interface Language {
 }
 
 export const languages: Language[] = [
-    { code: LanguageCode.EN, label: LanguageLabel.EN },
     { code: LanguageCode.SK, label: LanguageLabel.SK },
+    { code: LanguageCode.EN, label: LanguageLabel.EN },
 ];
 
-export const DEFAULT_LANGUAGE = LanguageCode.EN;
+export const DEFAULT_LANGUAGE = LanguageCode.SK;

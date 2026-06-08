@@ -1,7 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import type { Project } from '../lib/definitions.ts';
+import SplitRow from './shared/SplitRow.tsx';
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -80,43 +81,7 @@ function usePersonalProjects(): Project[] {
     ];
 }
 
-// ─── Scroll-reveal hook ───────────────────────────────────────────────────────
-
-function useScrollReveal(threshold = 0.15) {
-    const ref = useRef<HTMLDivElement>(null);
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        const el = ref.current;
-        if (!el) return;
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setVisible(true);
-                    observer.disconnect();
-                }
-            },
-            { threshold }
-        );
-        observer.observe(el);
-        return () => observer.disconnect();
-    }, [threshold]);
-
-    return { ref, visible };
-}
-
 // ─── Sub-components ───────────────────────────────────────────────────────────
-
-function ProjectNumber({ n }: { n: number }) {
-    return (
-        <span
-            className="absolute select-none font-black leading-none pointer-events-none text-foreground/5"
-            style={{ fontSize: 'clamp(6rem, 12vw, 10rem)', top: '-1rem', lineHeight: 1 }}
-        >
-      {String(n).padStart(2, '0')}
-    </span>
-    );
-}
 
 function ImagePlaceholder({ n }: { n: number }) {
     return (
@@ -151,21 +116,15 @@ function ProjectLink({ link, isGithubLink }: { link: string; isGithubLink: boole
     );
 }
 
-// ─── SplitRow ─────────────────────────────────────────────────────────────────
+// ─── ProjectRow ───────────────────────────────────────────────────────────────
 
-function SplitRow({ project, index }: { project: Project; index: number }) {
+function ProjectRow({ project, index }: { project: Project; index: number }) {
     const { t } = useTranslation();
-    const { ref, visible } = useScrollReveal();
-    const imageOnRight = index % 2 === 0; // 1st, 3rd… → image right; 2nd, 4th… → image left
 
-    const imageEl = (
-        <div className="relative w-full h-64 md:h-[330px] overflow-hidden rounded-xl group/img border border-border self-center order-1 md:order-none">
+    const media = (
+        <div className="relative w-full h-64 md:h-[330px] overflow-hidden rounded-xl group/img border border-border">
             {project.image ? (
-                <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <img
                         src={project.image}
                         alt={project.title}
@@ -184,57 +143,21 @@ function SplitRow({ project, index }: { project: Project; index: number }) {
         </div>
     );
 
-    const detailsEl = (
-        <div className="relative flex flex-col justify-center gap-4 py-4 md:py-8 order-2 md:order-none">
-            <ProjectNumber n={index + 1}/>
-            <h3 className="hidden md:block text-2xl md:text-3xl font-bold text-foreground leading-tight z-10">
-                {project.title}
-            </h3>
+    return (
+        <SplitRow index={index} title={project.title} media={media}>
             <p className="text-muted-foreground leading-relaxed z-10 my-5">{project.description}</p>
             <p className="text-sm text-muted-foreground z-10">{project.details}</p>
             <div className="flex flex-wrap gap-2 z-10">
                 {project.tags.map((tag) => (
                     <span key={tag} className="skill-badge text-xs">
-            {tag}
-          </span>
+                        {tag}
+                    </span>
                 ))}
             </div>
             <div className="flex gap-4 pt-2 z-10">
                 <ProjectLink link={project.link} isGithubLink={project.isGithubLink} />
             </div>
-        </div>
-    );
-
-    return (
-        <div
-            ref={ref}
-            className={`py-12 border-b border-border/50
-        transition-all duration-700 ease-out
-        ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-            style={{ transitionDelay: `${index * 80}ms` }}
-        >
-            {/* Mobile-only title, always rendered above image */}
-            <div className="md:hidden relative mb-6">
-                <ProjectNumber n={index + 1}/>
-                <h3 className="relative text-2xl font-bold text-foreground leading-tight z-10">
-                    {project.title}
-                </h3>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                {imageOnRight ? (
-                    <>
-                        {detailsEl}
-                        {imageEl}
-                    </>
-                ) : (
-                    <>
-                        {imageEl}
-                        {detailsEl}
-                    </>
-                )}
-            </div>
-        </div>
+        </SplitRow>
     );
 }
 
@@ -295,7 +218,7 @@ export default function Projects() {
                     {/* Project rows */}
                     <div>
                         {projects.map((project, index) => (
-                            <SplitRow key={project.title} project={project} index={index} />
+                            <ProjectRow key={project.title} project={project} index={index} />
                         ))}
                     </div>
 

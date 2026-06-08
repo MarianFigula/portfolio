@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "backToPortfolio": "Portfólio"
+  },
+  "nav": {
+    "why": "Prečo",
+    "work": "Projekty",
+    "process": "Postup",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "Marián Figula · Tvorba webov na mieru",
+    "headlinePrefix": "Web, ktorý vám",
+    "rotatingWords": ["získa klientov", "buduje dôveru", "predáva"],
+    "subtitle": "Pre firmy, živnostníkov a profesionálov. Dizajn, ktorý buduje dôveru, a optimalizácia, vďaka ktorej vás nájdu na Googli aj v AI vyhľadávaní.",
+    "primaryCta": "Bezplatná analýza vášho webu",
+    "secondaryCta": "Pozrieť ukážky"
+  },
+  "problem": {
+    "title": "Prečo na webe záleží",
+    "cards": [
+      {
+        "title": "Overujú si vás online",
+        "text": "Zastaraný alebo ťažko nájditeľný web vás stojí klientov - ľudia si dnes overujú firmy online ešte predtým, než zdvihnú telefón."
+      },
+      {
+        "title": "Vyhľadávanie sa mení",
+        "text": "Zákazníci hľadajú nielen cez Google, ale čoraz viac aj cez AI asistentov ako ChatGPT či Gemini. Väčšina firiem na to zatiaľ nie je pripravená."
+      }
+    ]
+  },
+  "whatYouGet": {
+    "title": "Čo dostanete",
+    "subtitle": "Žiadny technický žargón - len výsledky, ktoré vám pomôžu získať klientov.",
+    "cards": [
+      {
+        "title": "Dôveryhodný dizajn",
+        "text": "Moderný a profesionálny vzhľad, ktorý na prvý pohľad buduje dôveru a odlíši vás od konkurencie."
+      },
+      {
+        "title": "Nájdu vás na Googli",
+        "text": "Web pripravený pre vyhľadávače, aby vás potenciálni klienti našli vtedy, keď vás hľadajú."
+      },
+      {
+        "title": "Pripravené pre AI vyhľadávanie",
+        "text": "Optimalizácia pre ChatGPT, Gemini a ďalších AI asistentov - tam, kde sa dnes rozhoduje stále viac ľudí."
+      },
+      {
+        "title": "Funguje na mobile",
+        "text": "Plne funkčný a rýchly web na telefóne, tablete aj počítači. Bez kompromisov."
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Ukážky mojej práce",
+    "subtitle": "Weby, ktoré už dnes pracujú pre svojich majiteľov.",
+    "visit": "Pozrieť web",
+    "projects": [
+      {
+        "name": "Lechman - advokátska kancelária",
+        "description": "Moderný prezentačný web pre advokátsku kanceláriu - dôveryhodný dizajn a optimalizácia pre Google aj AI vyhľadávanie.",
+        "url": "https://www.lechman-advokat.sk/",
+        "image": "/weby/assets/lechman.png",
+        "alt": "Ukážka webu lechman-advokat.sk - advokátska kancelária",
+        "tags": ["Advokátska kancelária", "SEO", "AI vyhľadávanie"]
+      },
+      {
+        "name": "BELLegis",
+        "description": "Prezentačný web pre realitné a podnikateľské poradenstvo so zameraním na prehľadnosť, dôveru a získavanie klientov.",
+        "url": "https://bellegis.sk/",
+        "image": "/weby/assets/bellegis.png",
+        "alt": "Ukážka webu bellegis.sk - realitné a podnikateľské poradenstvo",
+        "tags": ["Reality & poradenstvo", "SEO", "Dôveryhodný dizajn"]
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Čo hovoria klienti",
+    "visit": "Pozrieť web",
+    "items": [
+      {
+        "quote": "Spolupráca s pánom Figulom pri úprave a spracovaní webovej stránky pre moju advokátsku kanceláriu prebehla na výbornej úrovni, som s jeho prácou nadmieru spokojný. Oceňujem najmä jeho proaktívny prístup, rýchlu komunikáciu a vysvetlenia týkajúce sa technických otázok a skutočností, s ktorými bežný užívateľ nemá inak skúsenosti. Web tak vnímam ako moderný, rýchly a plne optimalizovaný aj pre mobilné zariadenia. Spoluprácu určite odporúčam každému, kto hľadá spoľahlivého partnera pre tvorbu webu.",
+        "author": "JUDr. Vincent Lechman",
+        "role": "Advokátska kancelária JUDr. Vincent Lechman, s. r. o.",
+        "initials": "VL",
+        "rating": 5,
+        "url": "https://www.lechman-advokat.sk/"
+      }
+    ]
+  },
+  "process": {
+    "title": "Ako to prebieha",
+    "subtitle": "Jednoducho a bez záväzkov hneď na začiatku.",
+    "steps": [
+      {
+        "title": "Bezplatná analýza vášho webu",
+        "text": "Pozriem sa na vašu súčasnú situáciu a poviem vám, čo sa dá zlepšiť - nezáväzne a zadarmo."
+      },
+      {
+        "title": "Návrh a dohoda",
+        "text": "Dohodneme sa na rozsahu, podobe a cene tak, aby web dával zmysel pre vaše podnikanie."
+      },
+      {
+        "title": "Tvorba a spustenie",
+        "text": "Web pripravím, odladím a spustím. Vy sa môžete sústrediť na svojich klientov."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Napíšte mi a dohodneme si bezplatnú analýzu vášho webu. Zvyčajne odpoviem do jedného pracovného dňa.",
+    "form": {
+      "heading": "Napíšte mi správu",
+      "nameLabel": "Meno",
+      "namePlaceholder": "Vaše meno",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "vas@email.sk",
+      "messageLabel": "Správa",
+      "messagePlaceholder": "Napíšte mi, čo potrebujete...",
+      "sending": "Odosielam...",
+      "sendMessage": "Odoslať správu"
+    },
+    "info": {
+      "heading": "Spojme sa",
+      "location": "Bratislava, Slovensko"
+    },
+    "meeting": {
+      "heading": "Dohodnime si stretnutie",
+      "description": "Radšej priamy rozhovor? Rezervujte si 45-minútové stretnutie a preberieme váš web do detailov.",
+      "bookButton": "Rezervovať stretnutie"
+    },
+    "alerts": {
+      "success": "Ďakujem, správa bola odoslaná. Čoskoro sa vám ozvem.",
+      "error": "Správu sa nepodarilo odoslať. Skúste to prosím znova alebo mi napíšte priamo na e-mail."
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Marián Figula. Všetky práva vyhradené."
+  }
+}

@@ -14,6 +14,22 @@
         </image:image>
     </url>
 
+    <!-- Slovak landing page: website creation service -->
+    <url>
+        <loc>https://marianfigula.com/weby/</loc>
+        <lastmod>2026-06-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://marianfigula.com/weby/assets/lechman.png</image:loc>
+            <image:title>Lechman - advokátska kancelária - moderný web</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://marianfigula.com/weby/assets/bellegis.png</image:loc>
+            <image:title>BELLegis - moderný web pre realitné a podnikateľské poradenstvo</image:title>
+        </image:image>
+    </url>
+
     <!-- AI-readable summary for LLM crawler -->
     <url>
         <loc>https://marianfigula.com/llms.txt</loc>

@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "backToPortfolio": "Portfolio"
+  },
+  "nav": {
+    "why": "Why",
+    "work": "Work",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Marián Figula · Custom web development",
+    "headlinePrefix": "A website that",
+    "rotatingWords": ["wins you clients", "builds trust", "sells"],
+    "subtitle": "For businesses, sole traders and professionals. A design that builds trust, and optimization so people find you on Google and in AI search.",
+    "primaryCta": "Free review of your website",
+    "secondaryCta": "See examples"
+  },
+  "problem": {
+    "title": "Why your website matters",
+    "cards": [
+      {
+        "title": "They check you online",
+        "text": "An outdated or hard-to-find website costs you clients - people check businesses online today before they ever pick up the phone."
+      },
+      {
+        "title": "Search is changing",
+        "text": "Customers look not only on Google, but increasingly through AI assistants like ChatGPT and Gemini. Most firms are not ready for that yet."
+      }
+    ]
+  },
+  "whatYouGet": {
+    "title": "What you get",
+    "subtitle": "No technical jargon - just results that help you win clients.",
+    "cards": [
+      {
+        "title": "A trustworthy design",
+        "text": "A modern, professional look that builds trust at first glance and sets you apart from the competition."
+      },
+      {
+        "title": "Found on Google",
+        "text": "A website built for search engines, so potential clients find you exactly when they are looking."
+      },
+      {
+        "title": "Ready for AI search",
+        "text": "Optimized for ChatGPT, Gemini and other AI assistants - where more and more people now make decisions."
+      },
+      {
+        "title": "Works on mobile",
+        "text": "Fully functional and fast on phone, tablet and desktop. No compromises."
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Examples of my work",
+    "subtitle": "Websites that are already working for their owners.",
+    "visit": "View website",
+    "projects": [
+      {
+        "name": "Lechman - law office",
+        "description": "A modern presentation website for a law office - a trustworthy design and optimization for Google and AI search.",
+        "url": "https://www.lechman-advokat.sk/",
+        "image": "/weby/assets/lechman.png",
+        "alt": "Preview of lechman-advokat.sk - law office website",
+        "tags": ["Law office", "SEO", "AI search"]
+      },
+      {
+        "name": "BELLegis",
+        "description": "A presentation website for a real estate and business consultancy focused on clarity, trust and winning clients.",
+        "url": "https://bellegis.sk/",
+        "image": "/weby/assets/bellegis.png",
+        "alt": "Preview of bellegis.sk - real estate and business consulting website",
+        "tags": ["Real estate & consulting", "SEO", "Trustworthy design"]
+      }
+    ]
+  },
+  "reviews": {
+    "title": "What clients say",
+    "visit": "View website",
+    "items": [
+      {
+        "quote": "Cooperation with Mr. Figula in the modification and development of the website for my law firm was carried out at an excellent level, and I am extremely satisfied with his work. I especially appreciate his proactive approach, prompt communication, and clear explanations regarding technical matters and concepts that an average user would not normally be familiar with. As a result, I perceive the website as modern, fast, and fully optimized for mobile devices. I would certainly recommend working with him to anyone looking for a reliable partner for website development.",
+        "author": "JUDr. Vincent Lechman",
+        "role": "Law Office JUDr. Vincent Lechman",
+        "initials": "VL",
+        "rating": 5,
+        "url": "https://www.lechman-advokat.sk/"
+      }
+    ]
+  },
+  "process": {
+    "title": "How it works",
+    "subtitle": "Simple, with no commitment at the start.",
+    "steps": [
+      {
+        "title": "Free review of your website",
+        "text": "I look at your current situation and tell you what can be improved - with no obligation, for free."
+      },
+      {
+        "title": "Proposal and agreement",
+        "text": "We agree on the scope, look and price so the website makes sense for your business."
+      },
+      {
+        "title": "Build and launch",
+        "text": "I build, refine and launch the website. You get to focus on your clients."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Write to me and we'll arrange a free review of your website. I usually reply within one business day.",
+    "form": {
+      "heading": "Send me a message",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me what you need...",
+      "sending": "Sending...",
+      "sendMessage": "Send message"
+    },
+    "info": {
+      "heading": "Let's connect",
+      "location": "Bratislava, Slovakia"
+    },
+    "meeting": {
+      "heading": "Schedule a meeting",
+      "description": "Prefer a direct conversation? Book a 45-minute meeting and we'll go through your website in detail.",
+      "bookButton": "Book a meeting"
+    },
+    "alerts": {
+      "success": "Thank you, your message has been sent. I'll get back to you soon.",
+      "error": "The message could not be sent. Please try again or email me directly."
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Marián Figula. All rights reserved."
+  }
+}

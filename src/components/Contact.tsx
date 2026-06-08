@@ -1,46 +1,27 @@
-import {useState} from 'react';
-import {Mail, Send, Calendar, MapPin, Phone} from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { Mail, Calendar, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import ContactForm, { type ContactFormLabels } from './shared/ContactForm.tsx';
 
 
 const Contact = () => {
     const { t } = useTranslation();
-    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        const form = e.currentTarget;
-
-        try {
-            if (!form) {
-                console.error('Form reference is null');
-                setIsSubmitting(false);
-                return;
-            }
-            await emailjs.sendForm(
-                'service_f41gdwm',
-                'template_v3mrdc5',
-                form, {
-                    publicKey: 'UWfx0PhazET9YyLHf'
-                }
-            )
-
-            alert(t('contact.alerts.success'))
-
-            form.reset()
-        } catch (error) {
-            console.error("Failed to send email:", error);
-            alert(t('contact.alerts.error'));
-        } finally {
-            setIsSubmitting(false);
-        }
+    const labels: ContactFormLabels = {
+        heading: t('contact.form.heading'),
+        nameLabel: t('contact.form.nameLabel'),
+        namePlaceholder: t('contact.form.namePlaceholder'),
+        emailLabel: t('contact.form.emailLabel'),
+        emailPlaceholder: t('contact.form.emailPlaceholder'),
+        messageLabel: t('contact.form.messageLabel'),
+        messagePlaceholder: t('contact.form.messagePlaceholder'),
+        send: t('contact.form.sendMessage'),
+        sending: t('contact.form.sending'),
+        success: t('contact.alerts.success'),
+        error: t('contact.alerts.error'),
     };
 
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="min-h-screen scroll-mt-20 py-16">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-left mb-16 animate-fade-up">
@@ -56,71 +37,7 @@ const Contact = () => {
                     <div className="grid lg:grid-cols-2 gap-12">
                         {/* Contact Form */}
                         <div className="animate-fade-up">
-                            <div className="bg-card rounded-2xl p-8 border border-border/50 shadow-[var(--shadow-soft)]">
-                                <h3 className="text-2xl font-bold mb-6 text-foreground">{t('contact.form.heading')}</h3>
-
-                                <form onSubmit={handleSubmit} className="space-y-6">
-                                    <div className="space-y-2 text-left">
-                                        <label htmlFor="name" className="text-sm font-medium">
-                                            {t('contact.form.nameLabel')}
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="from_name"
-                                            required
-                                            className="w-full mt-2 px-4 py-3 rounded-xl border border-border/50 bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                                            placeholder={t('contact.form.namePlaceholder')}
-                                        />
-                                    </div>
-
-                                    <div className="space-y-2 text-left">
-                                        <label htmlFor="email" className="text-sm font-medium text-foreground">
-                                            {t('contact.form.emailLabel')}
-                                        </label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="from_email"
-                                            required
-                                            className="w-full mt-2 px-4 py-3 rounded-xl border border-border/50 bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                                            placeholder={t('contact.form.emailPlaceholder')}
-                                        />
-                                    </div>
-
-                                    <div className="space-y-2 text-left">
-                                        <label htmlFor="message" className="text-sm font-medium text-foreground">
-                                            {t('contact.form.messageLabel')}
-                                        </label>
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            required
-                                            rows={10}
-                                            className="w-full mt-2 px-4 py-3 rounded-xl border border-border/50 bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
-                                            placeholder={t('contact.form.messagePlaceholder')}
-                                        />
-                                    </div>
-
-                                    <button
-                                        type="submit"
-                                        disabled={isSubmitting}
-                                        className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
-                                    >
-                                        {isSubmitting ? (
-                                            <>
-                                                <div className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin"></div>
-                                                {t('contact.form.sending')}
-                                            </>
-                                        ) : (
-                                            <>
-                                                <Send size={20} />
-                                                {t('contact.form.sendMessage')}
-                                            </>
-                                        )}
-                                    </button>
-                                </form>
-                            </div>
+                            <ContactForm labels={labels} idPrefix="portfolio" rows={10} />
                         </div>
 
                         {/* Contact Info */}
