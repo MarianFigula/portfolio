@@ -43,6 +43,31 @@
     "tools": ["Git", "Docker", "Vite", "Webpack"],
     "domains": ["Web Development", "Full-Stack Development", "UI/UX Design", "Machine Learning", "Artificial Intelligence", "AI Integration", "Business Systems", "Process Automation", "SaaS Development"]
   },
+  "services": [
+    {
+      "name": "Tvorba webových stránok",
+      "description": "Moderné prezentačné weby pre firmy, živnostníkov a profesionálov. Dôveryhodný dizajn, optimalizácia pre Google aj AI vyhľadávanie, mobilná verzia.",
+      "audience": "Malé firmy, živnostníci a profesionáli, prevažne Slovensko",
+      "language": ["sk", "en"],
+      "page": "https://marianfigula.com/weby/"
+    }
+  ],
+  "websites": [
+    {
+      "name": "Lechman - advokátska kancelária",
+      "category": "website",
+      "description": "Moderný prezentačný web pre advokátsku kanceláriu - dôveryhodný dizajn, optimalizácia pre Google aj AI vyhľadávanie, mobilná verzia.",
+      "image": "https://marianfigula.com/weby/assets/lechman.png",
+      "url": "https://www.lechman-advokat.sk/"
+    },
+    {
+      "name": "BELLegis",
+      "category": "website",
+      "description": "Prezentačný web pre realitné a podnikateľské poradenstvo so zameraním na prehľadnosť, dôveru a získavanie klientov.",
+      "image": "https://marianfigula.com/weby/assets/bellegis.png",
+      "url": "https://bellegis.sk/"
+    }
+  ],
   "projects": [
     {
       "name": "Stribog",
