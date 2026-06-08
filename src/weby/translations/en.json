@@ -11,8 +11,8 @@
   "hero": {
     "eyebrow": "Marián Figula · Custom web development",
     "headlinePrefix": "A website that",
-    "rotatingWords": ["wins you clients", "builds trust", "sells"],
-    "subtitle": "For businesses, sole traders and professionals. A design that builds trust, and optimization so people find you on Google and in AI search.",
+    "rotatingWords": ["wins you clients", "builds trust", "works for you"],
+    "subtitle": "For businesses and entrepreneurs who want to look professional, build trust and win more clients.",
     "primaryCta": "Free review of your website",
     "secondaryCta": "See examples"
   },
@@ -21,33 +21,33 @@
     "cards": [
       {
         "title": "They check you online",
-        "text": "An outdated or hard-to-find website costs you clients - people check businesses online today before they ever pick up the phone."
+        "text": "People check a business online before they ever reach out. An outdated or hard-to-find website can cost you a client before they even call you."
       },
       {
         "title": "Search is changing",
-        "text": "Customers look not only on Google, but increasingly through AI assistants like ChatGPT and Gemini. Most firms are not ready for that yet."
+        "text": "Customers no longer search only on Google. More and more of them ask AI assistants like ChatGPT and Gemini."
       }
     ]
   },
   "whatYouGet": {
     "title": "What you get",
-    "subtitle": "No technical jargon - just results that help you win clients.",
+    "subtitle": "Every part of your website has one job: to turn a visitor into a client.",
     "cards": [
       {
-        "title": "A trustworthy design",
-        "text": "A modern, professional look that builds trust at first glance and sets you apart from the competition."
+        "title": "A first impression that sells",
+        "text": "A modern, professional look that earns trust at first glance and sets you apart from the competition."
       },
       {
-        "title": "Found on Google",
-        "text": "A website built for search engines, so potential clients find you exactly when they are looking."
+        "title": "Visible on Google",
+        "text": "A website built for search engines, so potential clients find you exactly when they're looking."
       },
       {
         "title": "Ready for AI search",
-        "text": "Optimized for ChatGPT, Gemini and other AI assistants - where more and more people now make decisions."
+        "text": "A website that ChatGPT, Gemini and other AI assistants can understand. That's where more and more people now look for answers."
       },
       {
-        "title": "Works on mobile",
-        "text": "Fully functional and fast on phone, tablet and desktop. No compromises."
+        "title": "Adapts to every device",
+        "text": "Your website keeps its speed and looks great on phone, tablet and desktop. After all, most people will visit you from a phone."
       }
     ]
   },
@@ -58,11 +58,11 @@
     "projects": [
       {
         "name": "Lechman - law office",
-        "description": "A modern presentation website for a law office - a trustworthy design and optimization for Google and AI search.",
+        "description": "A modern presentation website for a law office. A trustworthy look and visibility on Google and in AI search.",
         "url": "https://www.lechman-advokat.sk/",
         "image": "/weby/assets/lechman.png",
         "alt": "Preview of lechman-advokat.sk - law office website",
-        "tags": ["Law office", "SEO", "AI search"]
+        "tags": ["Law office"]
       },
       {
         "name": "BELLegis",
@@ -70,7 +70,7 @@
         "url": "https://bellegis.sk/",
         "image": "/weby/assets/bellegis.png",
         "alt": "Preview of bellegis.sk - real estate and business consulting website",
-        "tags": ["Real estate & consulting", "SEO", "Trustworthy design"]
+        "tags": ["Real estate and consulting"]
       }
     ]
   },
@@ -94,7 +94,7 @@
     "steps": [
       {
         "title": "Free review of your website",
-        "text": "I look at your current situation and tell you what can be improved - with no obligation, for free."
+        "text": "I look at your current situation and tell you what can be improved. No obligation, free of charge."
       },
       {
         "title": "Proposal and agreement",

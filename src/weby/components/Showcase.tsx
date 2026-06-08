@@ -19,17 +19,18 @@ function ShowcaseRow({ project, index }: { project: ShowcaseProject; index: numb
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative block h-64 w-full overflow-hidden rounded-xl border border-border group/img md:h-[330px]"
+            className="relative block w-full overflow-hidden rounded-xl border border-border group/img"
         >
             <img
                 src={project.image}
                 alt={project.alt}
                 loading="lazy"
-                className="h-full w-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
+                className="block h-auto w-full transition-transform duration-500 group-hover/img:scale-105"
             />
-            <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-background/60 opacity-0 transition-opacity duration-300 group-hover/img:opacity-100">
-                <span className="px-4 py-2 font-semibold tracking-wide text-primary">
+            <div className="absolute inset-0 flex items-center justify-center bg-background/60 opacity-0 transition-opacity duration-300 group-hover/img:opacity-100">
+                <span className="inline-flex translate-y-8 items-center gap-2 rounded-full bg-primary/85 px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 backdrop-blur-sm">
                     {t('showcase.visit')}
+                    <ExternalLink size={15} />
                 </span>
             </div>
         </a>

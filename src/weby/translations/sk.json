@@ -10,44 +10,44 @@
   },
   "hero": {
     "eyebrow": "Marián Figula · Tvorba webov na mieru",
-    "headlinePrefix": "Web, ktorý vám",
-    "rotatingWords": ["získa klientov", "buduje dôveru", "predáva"],
-    "subtitle": "Pre firmy, živnostníkov a profesionálov. Dizajn, ktorý buduje dôveru, a optimalizácia, vďaka ktorej vás nájdu na Googli aj v AI vyhľadávaní.",
-    "primaryCta": "Bezplatná analýza vášho webu",
+    "headlinePrefix": "Web, ktorý",
+    "rotatingWords": ["získava klientov", "buduje dôveru", "pracuje za Vás"],
+    "subtitle": "Pre firmy a podnikateľov, ktorí chcú pôsobiť profesionálne, budovať dôveru a získavať viac klientov.",
+    "primaryCta": "Bezplatná analýza Vášho webu",
     "secondaryCta": "Pozrieť ukážky"
   },
   "problem": {
     "title": "Prečo na webe záleží",
     "cards": [
       {
-        "title": "Overujú si vás online",
-        "text": "Zastaraný alebo ťažko nájditeľný web vás stojí klientov - ľudia si dnes overujú firmy online ešte predtým, než zdvihnú telefón."
+        "title": "Overujú si Vás online",
+        "text": "Ľudia si dnes firmu overia online skôr, než ju vôbec oslovia. Zastaraný alebo ťažko nájditeľný web Vás tak môže pripraviť o klienta ešte predtým, než Vám stihne zavolať."
       },
       {
         "title": "Vyhľadávanie sa mení",
-        "text": "Zákazníci hľadajú nielen cez Google, ale čoraz viac aj cez AI asistentov ako ChatGPT či Gemini. Väčšina firiem na to zatiaľ nie je pripravená."
+        "text": "Zákazníci už nehľadajú len cez Google. Čoraz častejšie sa pýtajú AI asistentov ako ChatGPT či Gemini."
       }
     ]
   },
   "whatYouGet": {
     "title": "Čo dostanete",
-    "subtitle": "Žiadny technický žargón - len výsledky, ktoré vám pomôžu získať klientov.",
+    "subtitle": "Každá časť webu má jednu úlohu: premeniť návštevníka na klienta.",
     "cards": [
       {
-        "title": "Dôveryhodný dizajn",
-        "text": "Moderný a profesionálny vzhľad, ktorý na prvý pohľad buduje dôveru a odlíši vás od konkurencie."
+        "title": "Prvý dojem, ktorý predáva",
+        "text": "Moderný a profesionálny vzhľad, ktorý na prvý pohľad vzbudí dôveru a odlíši Vás od konkurencie."
       },
       {
-        "title": "Nájdu vás na Googli",
-        "text": "Web pripravený pre vyhľadávače, aby vás potenciálni klienti našli vtedy, keď vás hľadajú."
+        "title": "Viditeľní na Googli",
+        "text": "Web pripravený pre vyhľadávače, aby Vás potenciálni klienti našli presne vtedy, keď Vás hľadajú."
       },
       {
-        "title": "Pripravené pre AI vyhľadávanie",
-        "text": "Optimalizácia pre ChatGPT, Gemini a ďalších AI asistentov - tam, kde sa dnes rozhoduje stále viac ľudí."
+        "title": "Pripravený pre AI vyhľadávanie",
+        "text": "Web zrozumiteľný aj pre ChatGPT, Gemini a ďalších AI asistentov. Práve tam dnes hľadá odpovede stále viac ľudí."
       },
       {
-        "title": "Funguje na mobile",
-        "text": "Plne funkčný a rýchly web na telefóne, tablete aj počítači. Bez kompromisov."
+        "title": "Prispôsobí sa každému zariadeniu",
+        "text": "Web si zachová rýchlosť aj vzhľad na mobile, tablete aj počítači. Väčšina ľudí Vás totiž navštívi práve z telefónu."
       }
     ]
   },
@@ -58,11 +58,11 @@
     "projects": [
       {
         "name": "Lechman - advokátska kancelária",
-        "description": "Moderný prezentačný web pre advokátsku kanceláriu - dôveryhodný dizajn a optimalizácia pre Google aj AI vyhľadávanie.",
+        "description": "Moderný prezentačný web pre advokátsku kanceláriu. Dôveryhodný vzhľad a viditeľnosť na Googli aj v AI vyhľadávaní.",
         "url": "https://www.lechman-advokat.sk/",
         "image": "/weby/assets/lechman.png",
         "alt": "Ukážka webu lechman-advokat.sk - advokátska kancelária",
-        "tags": ["Advokátska kancelária", "SEO", "AI vyhľadávanie"]
+        "tags": ["Advokátska kancelária"]
       },
       {
         "name": "BELLegis",
@@ -70,7 +70,7 @@
         "url": "https://bellegis.sk/",
         "image": "/weby/assets/bellegis.png",
         "alt": "Ukážka webu bellegis.sk - realitné a podnikateľské poradenstvo",
-        "tags": ["Reality & poradenstvo", "SEO", "Dôveryhodný dizajn"]
+        "tags": ["Reality a poradenstvo"]
       }
     ]
   },
@@ -93,12 +93,12 @@
     "subtitle": "Jednoducho a bez záväzkov hneď na začiatku.",
     "steps": [
       {
-        "title": "Bezplatná analýza vášho webu",
-        "text": "Pozriem sa na vašu súčasnú situáciu a poviem vám, čo sa dá zlepšiť - nezáväzne a zadarmo."
+        "title": "Bezplatná analýza Vášho webu",
+        "text": "Pozriem sa na Vašu súčasnú situáciu a poviem Vám, čo sa dá zlepšiť. Nezáväzne a zadarmo."
       },
       {
         "title": "Návrh a dohoda",
-        "text": "Dohodneme sa na rozsahu, podobe a cene tak, aby web dával zmysel pre vaše podnikanie."
+        "text": "Dohodneme sa na rozsahu, podobe a cene tak, aby web dával zmysel pre Vaše podnikanie."
       },
       {
         "title": "Tvorba a spustenie",
@@ -108,7 +108,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Napíšte mi a dohodneme si bezplatnú analýzu vášho webu. Zvyčajne odpoviem do jedného pracovného dňa.",
+    "subtitle": "Napíšte mi a dohodneme si bezplatnú analýzu Vášho webu. Zvyčajne odpoviem do jedného pracovného dňa.",
     "form": {
       "heading": "Napíšte mi správu",
       "nameLabel": "Meno",
@@ -126,11 +126,11 @@
     },
     "meeting": {
       "heading": "Dohodnime si stretnutie",
-      "description": "Radšej priamy rozhovor? Rezervujte si 45-minútové stretnutie a preberieme váš web do detailov.",
+      "description": "Radšej priamy rozhovor? Rezervujte si 45-minútové stretnutie a preberieme Váš web do detailov.",
       "bookButton": "Rezervovať stretnutie"
     },
     "alerts": {
-      "success": "Ďakujem, správa bola odoslaná. Čoskoro sa vám ozvem.",
+      "success": "Ďakujem, správa bola odoslaná. Čoskoro sa Vám ozvem.",
       "error": "Správu sa nepodarilo odoslať. Skúste to prosím znova alebo mi napíšte priamo na e-mail."
     }
   },
