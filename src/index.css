@@ -121,6 +121,15 @@ body {
   font-variation-settings: "opsz" 32;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: hsl(var(--foreground));
+  -webkit-box-shadow: 0 0 0 1000px hsl(var(--background)) inset;
+  box-shadow: 0 0 0 1000px hsl(var(--background)) inset;
+  caret-color: hsl(var(--foreground));
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 /* Hero Section Styles */
 .hero-gradient {
   background: var(--gradient-blue);

@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 - `npm run dev` — start the Vite dev server
-- `npm run build` — type-check (`tsc -b`) then build to `dist/`
+- `npm run build` — type-check (`tsc -b`) then build to `dist/`. This is a **multi-page build**: `vite.config.ts` declares two Rollup inputs — `index.html` (the portfolio) and `weby/index.html` (the `/weby` landing page).
 - `npm run lint` — run ESLint over the repo
 - `npm run preview` — serve the production build locally
 - `npm run deploy` — build and publish `dist/` to GitHub Pages via `gh-pages` (site: https://marianfigula.com)
@@ -14,7 +14,19 @@ There is no test runner configured.
 
 ## Architecture
 
-Single-page personal portfolio built with **React 19 + TypeScript + Vite + Tailwind CSS v4**. There is no router despite `react-router-dom` being a dependency — `App.tsx` renders one long page composed of section components (`Hero`, `About`, `Skills`, `Projects`, `Contact`) between a `Header` and `Footer`. Navigation is anchor-based scrolling to section `id`s.
+**React 19 + TypeScript + Vite + Tailwind CSS v4**. There is no client-side router despite `react-router-dom` being a dependency — instead there are **two independent single-page apps**, each its own Vite entry, mounted into separate HTML files. Navigation within a page is anchor-based scrolling to section `id`s.
+
+- **Portfolio** — `index.html` → `src/main.tsx` → `App.tsx`. One long page: `Hero`, `About`, `Skills`, `Projects`, `Contact` between a `Header` and `Footer`.
+- **`/weby` landing page** — `weby/index.html` → `src/weby/main.tsx` → `src/weby/WebyApp.tsx`. A Slovak-first marketing page for web-design clients: `WebyHeader`, `WebyHero`, `WebyProblem`, `WhatYouGet`, `Showcase`, `Reviews`, `Process`, plus the **shared** `Contact` and `Footer` from `src/components/`. Its components live in `src/weby/components/`.
+
+The two apps never load together (separate documents), but they share a lot: see *Shared components* below. `weby/index.html` carries its own SEO/structured-data `<head>` (ProfessionalService schema, OG tags, gtag).
+
+### Shared components (`src/components/shared/`)
+Both apps render the same building blocks, parameterized rather than duplicated:
+- `Header.tsx` — sticky header (transparent over hero, frosted on scroll, mobile burger). Takes `logo`, `links`, and a `rightSlot` (language selector for the portfolio, back-link for weby). The portfolio's `src/components/Header.tsx` and weby's `WebyHeader.tsx` are thin wrappers that supply those props.
+- `ContactForm.tsx` — the EmailJS form (see *Contact form*).
+- `ProjectNumber.tsx`, `SplitRow.tsx` — presentational helpers.
+- `useScrollReveal` (`src/lib/hooks/useScrollReveal.ts`) — IntersectionObserver hook returning `{ ref, visible }` to drive scroll-in entrance transitions; used by both apps.
 
 ### Internationalization (the core cross-cutting concern)
 All user-facing text flows through **i18next / react-i18next**. Components contain no hard-coded copy — they call `t('some.key')`, and the strings live in `src/translations/en.json` and `src/translations/sk.json`. When adding or changing any visible text, update **both** JSON files with matching key paths.
